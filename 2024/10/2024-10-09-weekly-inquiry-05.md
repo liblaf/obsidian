@@ -3,9 +3,10 @@ categories:
   - Course Work
 date: 2024-10-09T21:04:10+08:00
 tags:
+  - Generated/AI
   - PhD_Course/English_for_Doctoral_Students
 title: "Weekly 05 Question #02"
-updated: 2024-10-19T02:53:13+08:00
+updated: 2024-10-19T03:18:07+08:00
 ---
 
 ## Initial Question
