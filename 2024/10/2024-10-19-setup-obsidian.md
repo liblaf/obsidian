@@ -1,7 +1,7 @@
 ---
+date: 2024-10-19T00:51:54+08:00
 title: Setup Obsidian
 updated: 2024-10-19T01:36:34+08:00
-date: 2024-10-19T00:51:54+08:00
 ---
 
 ## Plugins
