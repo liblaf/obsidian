@@ -3,4 +3,5 @@ title: Setup Obsidian
 ---
 ## Plugins
 
-- [obsidian-git](https://github.com/Vinzent03/obsidian-git)
+- [Git](https://github.com/Vinzent03/obsidian-git)
+- [Remotely Save](https://github.com/remotely-save/remotely-save)
