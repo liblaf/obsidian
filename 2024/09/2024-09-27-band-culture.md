@@ -1,7 +1,7 @@
 ---
-date: 2024-09-27T19:02:51+08:00
+created: 2024-09-27T19:02:51+08:00
+modified: 2024-10-19T03:09:43+08:00
 title: 乐队文化
-updated: 2024-10-19T03:09:43+08:00
 ---
 
 > by [@CYW](https://github.com/veevang)
