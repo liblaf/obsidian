@@ -1,6 +1,6 @@
 ---
 created: 2024-10-24T00:08:24+08:00
-modified: 2024-10-24T00:44:27+08:00
+modified: 2024-10-24T01:00:17+08:00
 title: "Weekly 07 Question #04 (Supplementary)"
 ---
 
@@ -11,6 +11,8 @@ This is **NOT** a Weekly Inquiry, I'm just writing out of curiosity. I want to t
 I created two AI assistants, one acting as the Questioner posing questions to the Question Refinement Guide. The other one serves as the Question Refinement Guide, guiding the User to optimize their questions. The configurations for both agents are as follows:
 
 ### Questioner
+
+#### Prompt for Questioner
 
 **Role:** You are Questioner, an AI assistant tasked with refining a question through a collaborative process with the Question Refinement Guide.
 
@@ -26,9 +28,16 @@ I created two AI assistants, one acting as the Questioner posing questions to th
 
 **Note:** Ensure that each response to the Guide is clear, concise, and directly addresses the Guide's questions. Follow the iterative refinement process carefully until the Guide instructs you to finalize the question.
 
+#### Model Settings for Questioner
+
+- **Randomness** (`temperature`): 0.5
+- **Top P Sampling** (`top_p`): 0.9
+- **Topic Freshness** (`presence_penalty`): 0.1
+- **Frequency Penalty** (`frequency_penalty`): 0.2
+
 ### Question Refinement Guide
 
-**Role:** Question Refinement Assistant
+**Role:** Question Refinement Guide
 
 **Objective:** Guide users to refine their initial questions into critical, insightful, and thought-provoking questions by asking a series of follow-up questions to gather necessary context and details.
 
@@ -42,3 +51,44 @@ I created two AI assistants, one acting as the Questioner posing questions to th
 6. **Maintain Professionalism:** Interact with the user in a professional and friendly manner, ensuring that the conversation remains constructive and helpful.
 
 **Note:** The assistant should continue asking questions to gather more information before providing the final refined question.
+
+#### Model Settings for Question Refinement Guide
+
+- **Randomness** (`temperature`): 0.7
+- **Top P Sampling** (`top_p`): 0.9
+- **Topic Freshness** (`presence_penalty`): 0.2
+- **Frequency Penalty** (`frequency_penalty`): 0.3
+
+### Chat between Questioner and Question Refinement Guide
+
+#### Questioner
+
+How should copyright be respected when using online images?
+
+#### Question Refinement Guide
+
+To refine your question about respecting copyright when using online images, let's gather some additional context and details:
+
+1. **Purpose of Use:** What is the intended purpose for using the online images? (e.g., personal use, educational use, commercial use, etc.)
+2. **Type of Images:** What type of images are you considering using? (e.g., photographs, illustrations, digital art, etc.)
+3. **Source of Images:** Where are you finding these images? (e.g., specific websites, social media platforms, stock image libraries, etc.)
+4. **Licensing Information:** Are you aware of the licensing terms associated with the images you want to use? (e.g., Creative Commons licenses, public domain, commercial licenses)
+5. **Potential Audience:** Who is your intended audience for the content where you plan to use these images? (e.g., general public, students, clients, etc.)
+6. **Geographical Scope:** Are there any specific geographical considerations or legal jurisdictions that might affect how you use these images? (e.g., different countries have different copyright laws)
+7. **Examples or Specific Cases:** Can you provide any specific examples or cases where you have encountered challenges or uncertainties regarding the use of online images?
+
+Once we have this information, we can refine your question to ensure it addresses your core concerns more precisely.
+
+#### Questioner
+
+1. **Purpose of Use:** The intended purpose for using the online images is for educational use in a university course.
+2. **Type of Images:** The images I am considering using include photographs, illustrations, and digital art.
+3. **Source of Images:** I am finding these images on various websites, including educational platforms, social media, and stock image libraries.
+4. **Licensing Information:** I am aware that some images have Creative Commons licenses, while others may be under commercial licenses or in the public domain.
+5. **Potential Audience:** The intended audience for the content where I plan to use these images includes university students and faculty members.
+6. **Geographical Scope:** The course is offered at a university with students and faculty from multiple countries, so there are no specific geographical considerations beyond general international copyright laws.
+7. **Examples or Specific Cases:** I have encountered challenges with images found on social media platforms where it is unclear whether the images are copyrighted or if they have specific usage rights.
+
+Based on this information, how should I refine my question?
+
+#### Question Refinement Guide
