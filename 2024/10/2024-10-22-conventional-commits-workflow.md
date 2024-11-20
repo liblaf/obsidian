@@ -1,6 +1,6 @@
 ---
 created: 2024-10-22T17:52:14+08:00
-modified: 2024-10-22T17:57:10+08:00
+modified: 2024-11-20T17:45:29+08:00
 title: Conventional Commits Workflow
 ---
 
