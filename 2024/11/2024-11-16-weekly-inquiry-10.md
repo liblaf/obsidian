@@ -1,9 +1,9 @@
 ---
 created: 2024-11-16T11:25:29+08:00
-modified: 2024-11-20T22:15:46+08:00
+modified: 2024-12-25T11:29:40+08:00
 tags:
   - AIGC
-  - PhD_Course/Digital_Geometry_Processing
+  - PhD_Course/English_for_Doctoral_Students
 title: "Week 10 Question #06"
 ---
 
@@ -16,6 +16,44 @@ How to make a good interview design?
 How can I design effective interview questions to explore the impact of globalization on dietary habits and cultural identity among non-local students in Beijing, considering time constraints and individual differences?
 
 ## Answer
+
+1. **Understand Your Objective**
+	- Clarify the purpose of the interview.
+	- Identify key themes you want to cover.
+2. **Use Open-Ended Questions**
+	- Encourage detailed responses.
+	- Avoid leading questions.
+	- Ask neutral questions like, "What are your thoughts on...?"
+3. **Be Specific and Clear**
+	- Avoid ambiguity.
+	- Use simple language.
+	- Example: Instead of "How do you feel about food in Beijing?" ask, "How has your experience with finding traditional foods from your home country been in Beijing?"
+4. **Follow a Logical Sequence**
+	- Start with warm-up questions.
+	- Example: "Can you briefly introduce yourself?"
+	- Gradually move to more specific questions.
+	- End with reflective questions.
+5. **Balance Depth and Breadth**
+	- Use follow-up questions for depth.
+	- Example: "Can you tell me more about that challenge?"
+	- Ensure you cover all key themes.
+6. **Consider Cultural Sensitivity**
+	- Respect cultural differences.
+	- Use inclusive language.
+7. **Test Your Questions**
+	- Conduct a practice interview.
+	- Adjust questions based on feedback.
+8. **Prepare for Flexibility**
+	- Be ready to adapt questions.
+	- Stay focused on main objectives.
+9. **Use a Mix of Question Types**
+	- Open-ended for detailed responses.
+	- Closed-ended for quick answers.
+	- Hypothetical for exploring scenarios.
+	- Comparative to draw out differences.
+10. **Review and Revise**
+	- Review notes after each interview.
+	- Continuously refine questions.
 
 ## Chat with iAsk
 
