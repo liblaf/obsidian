@@ -6,7 +6,7 @@ header: English for Doctoral Students (94200012-6)
 modified: 2024-11-20T17:45:29+08:00
 tags:
   - AIGC
-  - PhD_Course/English_for_Doctoral_Students
+  - PhD/Course/English_for_Doctoral_Students
 title: Comparison between iAsk & general LLMs
 ---
 

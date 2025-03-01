@@ -3,7 +3,7 @@ created: 2024-11-16T11:25:29+08:00
 modified: 2024-12-25T11:29:40+08:00
 tags:
   - AIGC
-  - PhD_Course/English_for_Doctoral_Students
+  - PhD/Course/English_for_Doctoral_Students
 title: "Week 10 Question #06"
 ---
 

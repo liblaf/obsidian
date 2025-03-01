@@ -5,7 +5,7 @@ created: 2024-11-11T16:11:39+08:00
 modified: 2024-11-21T21:45:56+08:00
 tags:
   - AIGC
-  - PhD_Course/English_for_Doctoral_Students
+  - PhD/Course/English_for_Doctoral_Students
 title: Interview Design
 ---
 
