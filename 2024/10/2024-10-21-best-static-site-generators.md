@@ -1,6 +1,8 @@
 ---
 created: 2024-10-21T17:27:02+08:00
-modified: 2024-11-20T17:45:29+08:00
+modified: 2025-03-01T16:46:53+08:00
+tags:
+  - WIP
 title: Best Static Site Generators
 ---
 

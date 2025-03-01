@@ -1,6 +1,8 @@
 ---
 created: 2024-10-21T17:18:21+08:00
-modified: 2024-11-20T17:45:29+08:00
+modified: 2025-03-01T16:47:09+08:00
+tags:
+  - WIP
 title: Setup Blog
 ---
 

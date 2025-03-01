@@ -1,6 +1,9 @@
 ---
 created: 2024-12-18T13:38:27+08:00
-modified: 2024-12-18T16:34:46+08:00
+modified: 2025-03-01T16:47:47+08:00
+tags:
+  - Programming/Python
+  - WIP
 title: Python GUI
 ---
 

@@ -1,6 +1,8 @@
 ---
 created: 2024-10-24T22:13:20+08:00
-modified: 2024-11-20T17:45:15+08:00
+modified: 2025-03-01T16:47:26+08:00
+tags:
+  - Programming/Python
 title: "Comparing `lazy-loader` and `etils.epy`: A Deep Dive into Lazy Loading and API Exports"
 ---
 
