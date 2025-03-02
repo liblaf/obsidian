@@ -2,7 +2,7 @@
 created: 2024-10-22T17:52:14+08:00
 modified: 2025-03-01T16:47:20+08:00
 tags:
-  - WIP
+  - TODO
 title: Conventional Commits Workflow
 ---
 

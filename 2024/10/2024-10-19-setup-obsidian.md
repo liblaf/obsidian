@@ -3,7 +3,7 @@ created: 2024-10-19T00:51:54+08:00
 modified: 2025-03-01T16:46:38+08:00
 tags:
   - Tools/Obsidian
-  - WIP
+  - TODO
 title: Setup Obsidian
 ---
 

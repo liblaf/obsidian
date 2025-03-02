@@ -2,7 +2,7 @@
 created: 2024-10-21T17:04:50+08:00
 modified: 2025-03-01T16:47:04+08:00
 tags:
-  - WIP
+  - TODO
 title: "Python Documentation: MkDocs vs Sphinx"
 ---
 

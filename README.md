@@ -22,3 +22,4 @@ PhD/research/
 ## TODO
 
 - [ ] import notes from [gh:liblaf/blog](https://github.com/liblaf/blog)
+- [ ] import notes from [gh:liblaf/obsidian.bak](https://github.com/liblaf/obsidian.bak)

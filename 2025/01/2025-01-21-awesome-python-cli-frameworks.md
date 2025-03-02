@@ -4,7 +4,7 @@ modified: 2025-03-01T16:42:40+08:00
 tags:
   - CLI
   - Programming/Python
-  - WIP
+  - TODO
 title: Awesome Python CLI Libraries
 ---
 
