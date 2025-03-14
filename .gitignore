@@ -13,10 +13,3 @@
 # Add below lines to exclude OS settings and caches
 .trash/
 .DS_Store
-
-*.gif
-*.jpeg
-*.jpg
-*.pdf
-*.png
-*.svg
