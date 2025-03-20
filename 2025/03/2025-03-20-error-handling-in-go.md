@@ -1,6 +1,6 @@
 ---
 created: 2025-03-20T13:03:12+08:00
-modified: 2025-03-20T13:32:59+08:00
+modified: 2025-03-20T13:37:58+08:00
 title: Error Handling in Go
 tags: [Programming/Go]
 ---
@@ -22,5 +22,5 @@ tags: [Programming/Go]
 
 |                  Library                   |                            Stars                            |                            Last Commit                            | Color | JSON |
 |:----------------------------------------: |:---------------------------------------------------------: |:---------------------------------------------------------------: |:---: |:--: |
-|   [zap](https://github.com/uber-go/zap)    |![](https://img.shields.io/github/stars/uber-go/zap?label=) |![](https://img.shields.io/github/last-commit/uber-go/zap?label=) |   ✅   |  ✅   |
+|   [zap](https://github.com/uber-go/zap)    |![](https://img.shields.io/github/stars/uber-go/zap?label=) |![](https://img.shields.io/github/last-commit/uber-go/zap?label=) |  ⚠️   |  ✅   |
 | ⭐ [zerolog](https://github.com/rs/zerolog) |![](https://img.shields.io/github/stars/rs/zerolog?label=)  |![](https://img.shields.io/github/last-commit/rs/zerolog?label=)  |   ✅   |  ✅   |
