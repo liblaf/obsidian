@@ -1,9 +1,22 @@
 ---
 created: 2025-03-20T13:03:12+08:00
-modified: 2025-03-20T13:39:25+08:00
-title: Error Handling in Go
+modified: 2025-03-20T13:58:11+08:00
+title: Awesome Go
 tags: [Programming/Go]
 ---
+
+## Awesome Lists
+
+|                     Repository                      |                               Stars                                |                               Last Commit                                |
+|:-------------------------------------------------: |:----------------------------------------------------------------: |:----------------------------------------------------------------------: |
+| [awesome-go](https://github.com/avelino/awesome-go) |![](https://img.shields.io/github/stars/avelino/awesome-go?label=) |![](https://img.shields.io/github/last-commit/avelino/awesome-go?label=) |
+
+## Standard CLI
+
+|                   Library                   |                            Stars                            |                            Last Commit                            | Config Files | Fish Completion | Markdown Help |
+|:-----------------------------------------: |:---------------------------------------------------------: |:---------------------------------------------------------------: |:----------: |:-------------: |:-----------: |
+|  ⭐ [cobra](https://github.com/spf13/cobra)  |![](https://img.shields.io/github/stars/spf13/cobra?label=) |![](https://img.shields.io/github/last-commit/spf13/cobra?label=) |      🟢      |       🟢        |      🟢       |
+| [urfave/cli](https://github.com/urfave/cli) |![](https://img.shields.io/github/stars/urfave/cli?label=)  |![](https://img.shields.io/github/last-commit/urfave/cli?label=)  |      🟢      |       🟢        |      🟢       |
 
 ## Error Handling
 
