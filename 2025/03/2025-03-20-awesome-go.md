@@ -1,8 +1,9 @@
 ---
 created: 2025-03-20T13:03:12+08:00
-modified: 2025-03-20T13:58:11+08:00
+modified: 2025-03-25T08:49:07+08:00
+tags:
+  - Programming/Go
 title: Awesome Go
-tags: [Programming/Go]
 ---
 
 ## Awesome Lists
