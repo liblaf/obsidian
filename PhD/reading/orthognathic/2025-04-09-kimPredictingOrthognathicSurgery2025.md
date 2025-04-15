@@ -1,6 +1,6 @@
 ---
-created: 2025-04-15T10:58:48+08:00
-modified: 2025-04-15T11:17:55+08:00
+created: 2025-04-09T14:11:00+08:00
+modified: 2025-04-15T12:18:21+08:00
 tags:
   - Orthognathic
 title: Predicting orthognathic surgery results as postoperative lateral cephalograms using graph neural networks and diffusion models
