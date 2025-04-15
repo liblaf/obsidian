@@ -1,6 +1,6 @@
 ---
 created: 2025-04-09T14:11:00+08:00
-modified: 2025-04-15T13:28:37+08:00
+modified: 2025-04-15T13:51:01+08:00
 tags:
   - Orthognathic
 title: Predicting orthognathic surgery results as postoperative lateral cephalograms using graph neural networks and diffusion models
@@ -14,7 +14,9 @@ title: Predicting orthognathic surgery results as postoperative lateral cephalog
 
 ## Denotations
 
+- **ANS** - Anterior Nasal Spine
 - **CFG** - Classifier-Free Guidance
+- **CRSM** - Channel Relation Score Module
 - **DDS** - Doctor of Dental Surgery
 - **FOV** - Field Of View
 - **IASM** - Intended Amount of Surgical Movement
@@ -23,6 +25,7 @@ title: Predicting orthognathic surgery results as postoperative lateral cephalog
 - **OD** - OrthoDontist
 - **OGS** - OrthoGnathic Surgery
 - **OMFS** - Oral and Maxillofacial Surgeon
+- **PNS** - Posterior Nasal Spine
 - **post-ceph** - real post-op lateral cephalograms
 - **post-op** - post-operational
 - **pre-ceph** - pre-operational cephalogram
