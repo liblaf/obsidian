@@ -1,6 +1,6 @@
 ---
 created: 2025-04-09T14:11:00+08:00
-modified: 2025-04-15T13:08:26+08:00
+modified: 2025-04-15T13:28:37+08:00
 tags:
   - Orthognathic
 title: Predicting orthognathic surgery results as postoperative lateral cephalograms using graph neural networks and diffusion models
@@ -29,3 +29,7 @@ title: Predicting orthognathic surgery results as postoperative lateral cephalog
 - **spost-cephs** - synthetic post-op lateral cephalograms
 - **SPR** - Successful Prediction Rate
 - **VTT** - Visual Turing Test
+
+## Data
+
+- 707 pairs of pre-cephs and post-cephs
