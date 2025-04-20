@@ -1,6 +1,6 @@
 ---
 created: 2025-04-01T00:00:00+08:00
-modified: 2025-04-20T19:07:39+08:00
+modified: 2025-04-20T19:28:42+08:00
 tags:
   - PhD/Course/Systems_Security
 title: 第(9)周-信息收集发现与身份管理风险-溯源-Need Permission
@@ -86,16 +86,3 @@ User-Agent: curl/8.7.1
 3. **维持访问** (19:36:54): 多次重复攻击以巩固权限.
 
 **结论**: 攻击者通过修改 Cookie 参数绕过身份验证.
-
-```mermaid
-timeline
-    title "攻击时间线 (2025-04-14)"
-    section "探测阶段"
-        {19:33:47} : "访问 /admin (Cookie: guest)"
-        "19:33:47" : "路径遍历 (/admi, /ad)"
-        "19:33:47" : "参数注入 (/?user=admin)"
-    section "提权阶段"
-        "19:34:50" : "首次篡改 Cookie (permission=admin)"
-    section "维持访问"
-        "19:36:54" : "重复提权请求 (3 次)"
-```
