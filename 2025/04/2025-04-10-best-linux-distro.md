@@ -1,11 +1,8 @@
 ---
 created: 2025-04-10T19:19:58+08:00
-modified: 2025-04-27T00:38:12+08:00
+modified: 2025-04-10T20:05:56+08:00
 tags:
-  - Dotfiles
-  - OS/Linux
-  - OS/Linux/Arch
-  - OS/Linux/Arch/CachyOS
+  - Linux
 title: Best Linux Distro
 ---
 
