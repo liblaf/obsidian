@@ -50,7 +50,6 @@ $ sudo zpool import -f -R /mnt zpcachyos
 set -o errexit
 set -o nounset
 set -o pipefail
-set -o xtrace
 
 POOL="${1:-"rpool"}"
 
@@ -67,24 +66,21 @@ touch "/etc/zfs/zfs-list.cache/$POOL"
 function zfs-config() {
   local filesystem="$1"
   shift
-  local canmount="inherit"
-  local compression="inherit"
-  local mountpoint="inherit"
-  for arg in "$@"; do
-    case "$arg" in
-      canmount=*) canmount="${1#canmount=}" ;;
-      compression=*) compression="${1#compression=}" ;;
-      mountpoint=*) mountpoint="${1#mountpoint=}" ;;
-      *)
-        echo "Unknown argument: $1" >&2
-        return 1
-        ;;
-    esac
-  done
   if zfs list "$filesystem" &> /dev/null; then
-    zfs set canmount="$canmount" compression="$compression" mountpoint="$mountpoint" "$filesystem"
+    local exists="true"
   else
-    zfs create -o canmount="$canmount" -o compression="$compression" -o mountpoint="$mountpoint" "$filesystem"
+    local exists="false"
+  fi
+  if [[ $exists == "true" ]]; then
+    if (($# > 0)); then zfs set "$@" "$filesystem"; fi
+    for prop in canmount compression mountpoint; do
+      if [[ $* =~ "$prop="* ]]; then continue; fi
+      zfs inherit "$prop" "$filesystem"
+    done
+  else
+    args=()
+    for arg in "$@"; do args+=("-o" "$arg"); done
+    zfs create "${args[@]}" "$filesystem"
   fi
 }
 
@@ -97,8 +93,8 @@ zfs-config "$POOL/ROOT/CachyOS" canmount=on compression=lz4 mountpoint=/
 zfs-config "$POOL/ROOT/CachyOS/srv"
 zfs-config "$POOL/ROOT/CachyOS/usr" canmount=off
 zfs-config "$POOL/ROOT/CachyOS/usr/local"
-zfs-config "$POOL/ROOT/CachyOS/var"
-zfs-config "$POOL/ROOT/CachyOS/var/lib" canmount=off
+zfs-config "$POOL/ROOT/CachyOS/var" canmount=off
+zfs-config "$POOL/ROOT/CachyOS/var/lib"
 zfs-config "$POOL/ROOT/CachyOS/var/lib/AccountsService"
 zfs-config "$POOL/ROOT/CachyOS/var/lib/NetworkManager"
 zfs-config "$POOL/ROOT/CachyOS/var/lib/pacman"
@@ -108,10 +104,7 @@ zfs-config "$POOL/USERDATA" canmount=off mountpoint=none
 zfs-config "$POOL/USERDATA/home" canmount=on mountpoint=/home
 zfs-config "$POOL/USERDATA/root" canmount=on mountpoint=/root
 
-# rsync: This rsync does not support --crtimes (-N)
-rsync --info="PROGRESS2" --archive --hard-links --acls --xattrs --atimes --partial /mnt/old/ /mnt/
-
-cp "/etc/zfs/zfs-list.cache/$POOL" "/mnt/etc/zfs/zfs-list.cache/$POOL"
+zfs unmount -a
 ```
 
 ```sh
