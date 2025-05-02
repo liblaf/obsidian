@@ -1,6 +1,6 @@
 ---
 created: 2025-05-02T22:08:56+08:00
-modified: 2025-05-02T22:18:50+08:00
+modified: 2025-05-02T22:28:29+08:00
 tags:
   - OS/Linux/Arch/CachyOS
   - ZFS
@@ -47,8 +47,6 @@ $ sudo zpool import -f -R /mnt zpcachyos
 
 ```sh
 #!/bin/bash
-# zfs-restructure.sh
-# run with `sudo`
 set -o errexit
 set -o nounset
 set -o pipefail
@@ -56,8 +54,13 @@ set -o xtrace
 
 POOL="${1:-"rpool"}"
 
-sudo mkdir --parents --verbose /etc/zfs/zfs-list.cache
-sudo touch "/etc/zfs/zfs-list.cache/$POOL"
+if ((EUID != 0)); then
+  echo "This script must be run as root." >&2
+  exit 1
+fi
+
+mkdir --parents --verbose /etc/zfs/zfs-list.cache
+touch "/etc/zfs/zfs-list.cache/$POOL"
 
 # zpool import -f -R /mnt zpcachyos "$POOL"
 
@@ -117,6 +120,8 @@ sudo mount /dev/vda1 /mnt/boot/efi
 sudo arch-chroot /mnt
 ```
 
+In chroot environment:
+
 ```sh
 systemctl enable zfs.target
 systemctl enable zfs-import.target
@@ -127,6 +132,8 @@ systemctl enable zfs-volume-wait.service
 sed --in-place 's|zpcachyos/ROOT/cos/root|rpool/ROOT/CachyOS|g' /etc/default/grub
 grub-mkconfig --output="/boot/grub/grub.cfg"
 ```
+
+after exit from chroot:
 
 ```sh
 sudo umount /mnt/boot/efi
