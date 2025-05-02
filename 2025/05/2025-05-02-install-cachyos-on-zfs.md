@@ -1,6 +1,6 @@
 ---
 created: 2025-05-02T22:08:56+08:00
-modified: 2025-05-02T22:28:29+08:00
+modified: 2025-05-02T23:01:07+08:00
 tags:
   - OS/Linux/Arch/CachyOS
   - ZFS
@@ -112,6 +112,13 @@ zfs-config "$POOL/USERDATA/root" canmount=on mountpoint=/root
 rsync --info="PROGRESS2" --archive --hard-links --acls --xattrs --atimes --partial /mnt/old/ /mnt/
 
 cp "/etc/zfs/zfs-list.cache/$POOL" "/mnt/etc/zfs/zfs-list.cache/$POOL"
+```
+
+```sh
+sudo zfs mount -a
+# rsync: This rsync does not support --crtimes (-N)
+sudo rsync --info="PROGRESS2" --archive --hard-links --acls --xattrs --atimes --partial /mnt/old/ /mnt/
+sudo cp "/etc/zfs/zfs-list.cache/$POOL" "/mnt/etc/zfs/zfs-list.cache/$POOL"
 ```
 
 ```sh
