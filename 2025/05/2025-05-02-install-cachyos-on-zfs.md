@@ -145,5 +145,5 @@ after exit from chroot:
 ```sh
 sudo umount /mnt/boot/efi
 sudo umount /mnt/boot
-sudo zfs export -a
+sudo zpool export -a
 ```
