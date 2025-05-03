@@ -120,7 +120,7 @@ sudo mount /dev/vda1 /mnt/boot/efi
 sudo arch-chroot /mnt
 ```
 
-In chroot environment:
+In chroot:
 
 ```sh
 systemctl enable zfs.target
