@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T21:08:49+08:00
-modified: 2025-05-18T15:55:26+08:00
+modified: 2025-05-18T15:58:13+08:00
 tags:
   - Awesome_List
   - Experiment_Tracking
@@ -22,7 +22,6 @@ title: Awesome Experiment Tracking
 [^3]: 1GB metrics is far from enough. A typical Task requires about 5MB.
 [^4]: ClearML, W&B do not distinguish between stdout and stderr.
 
-### Self-Hostable
-
-- **MLflow** is the easiest to self-host
-- **ClearML** is complex and resource-consuming
+- **MLflow** is the easiest to self-host.
+- **ClearML** is complex and resource-consuming to self-host.
+- My favorite paradigm for organizing attributes is **neptune.ai**. It allows me to nest metrics freely.
