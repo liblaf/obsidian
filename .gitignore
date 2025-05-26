@@ -1,17 +1,73 @@
-# to exclude Obsidian's settings (including plugin and hotkey configurations)
+# Created by https://www.toptal.com/developers/gitignore/api/images,obsidian
+# Edit at https://www.toptal.com/developers/gitignore?templates=images,obsidian
+
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
+
+# Graphics Interchange Format
+*.gif
+
+# RAW
+*.raw
+
+# Web P
+*.webp
+
+# Portable Network Graphics
+*.png
+
+# Animated Portable Network Graphics
+*.apng
+
+# Multiple-image Network Graphics
+*.mng
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
+
+# X BitMap
+*.xbm
+
+# BMP
+*.bmp
+*.dib
+
+# ICO
+*.ico
+
+# 3D Images
+*.3dm
+*.max
+
+### Obsidian ###
+# config dir
 .obsidian/
 
-# to only exclude plugin configuration. Might be useful to prevent some plugin from exposing sensitive data
-.obsidian/plugins
-
-# OR only to exclude workspace cache
-.obsidian/workspace.json
-
-# to exclude workspace cache specific to mobile devices
-.obsidian/workspace-mobile.json
-
-# Add below lines to exclude OS settings and caches
-.trash/
-.DS_Store
-
-*.png
+# End of https://www.toptal.com/developers/gitignore/api/images,obsidian
