@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T21:08:49+08:00
-modified: 2025-05-21T15:35:19+08:00
+modified: 2025-05-18T15:58:13+08:00
 tags:
   - Awesome_List
   - Experiment_Tracking
@@ -10,10 +10,10 @@ title: Awesome Experiment Tracking
 |            | Self-Hostable |   Free Quota    | ANSI | Dark Mode | Live Console | Metadata | Uncommitted Changes | Artifacts | Nested Metric |
 | :--------: | :-----------: | :-------------: | :--: | :-------: | :----------: | :------: | :-----------------: | :-------: | :-----------: |
 | neptune.ai |       ❌       |      200GB      |  ❌   |     ❌     |      ✅       |    ✅     |          ✅          |     ✅     |       ✅       |
-|   MLflow   |       ✅       |   self-hosted   |  ❌   |     ✅     |      ❌       |    ✅     |          ❌          |     ✅     |       ✅       |
-|   Comet    |       ✅       |      500GB      |  ✅   |     ❌     |    ⚠️[^1]    |    ✅     |          ✅          |     ✅     |       ✅       |
-|  ClearML   |     ✅[^2]     | 1GB metrics[^3] |  ✅   |     ✅     |    ✅[^4]     |    ✅     |          ✅          |     ✅     |       ✅       |
-|    W&B     |       ❌       |      200GB      |  ✅   |     ❌     |    ✅[^4]     |    ❌     |          ❌          |     ✅     |       ✅       |
+|   MLflow   |       ✅       |   self-hosted   |  ❌   |     ✅     |      ❌       |    ✅     |          ❌          |     ✅     |       ❌       |
+|   Comet    |       ✅       |      500GB      |  ✅   |     ❌     |    ⚠️[^1]    |    ✅     |          ✅          |     ✅     |       ❌       |
+|  ClearML   |     ✅[^2]     | 1GB metrics[^3] |  ✅   |     ✅     |    ✅[^4]     |    ✅     |          ✅          |     ✅     |       ❌       |
+|    W&B     |       ❌       |      200GB      |  ✅   |     ❌     |    ✅[^4]     |    ❌     |          ❌          |     ✅     |       ❌       |
 
 - **Live Console:** I can view the progress of my experiment from any device.
 
@@ -25,9 +25,3 @@ title: Awesome Experiment Tracking
 - **MLflow** is the easiest to self-host.
 - **ClearML** is complex and resource-consuming to self-host.
 - My favorite paradigm for organizing attributes is **neptune.ai**. It allows me to nest metrics freely.
-
-## ClearML
-
-### ClearML Cons
-
-- 
