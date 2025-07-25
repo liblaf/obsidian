@@ -1,23 +1,19 @@
 ---
 created: 2025-05-05T21:08:49+08:00
-modified: 2025-07-16T05:01:11+08:00
+modified: 2025-05-21T15:35:19+08:00
 tags:
   - Awesome_List
   - Experiment_Tracking
 title: Awesome Experiment Tracking
 ---
 
-<style scoped>
-/* Cribbed from the excellent ITS Theme https://github.com/SlRvb/Obsidian--ITS-Theme */ .cm-s-obsidian .HyperMD-table-row.HyperMD-table-row.HyperMD-table-row { white-space: pre-wrap; min-width: min-content; }
-</style>
-
-|            |                                                PyPI Downloads                                                | Self-Hostable |   Free Quota    | ANSI | Dark Mode | Live Console | Metadata | Uncommitted Changes | Artifacts | Nested Metric |
-| :--------: | :----------------------------------------------------------------------------------------------------------: | :-----------: | :-------------: | :--: | :-------: | :----------: | :------: | :-----------------: | :-------: | :-----------: |
-| neptune.ai | [![PyPI - Downloads](https://img.shields.io/pypi/dm/neptune-scale)](https://pypi.org/project/neptune-scale/) |       ❌       |      200GB      |  ❌   |     ❌     |      ✅       |    ✅     |          ✅          |     ✅     |       ✅       |
-|   MLflow   |                                                                                                              |       ✅       |   self-hosted   |  ❌   |     ✅     |      ❌       |    ✅     |          ❌          |     ✅     |       ✅       |
-|   Comet    |                                                                                                              |       ✅       |      500GB      |  ✅   |     ❌     |    ⚠️[^1]    |    ✅     |          ✅          |     ✅     |       ✅       |
-|  ClearML   |                                                                                                              |     ✅[^2]     | 1GB metrics[^3] |  ✅   |     ✅     |    ✅[^4]     |    ✅     |          ✅          |     ✅     |       ✅       |
-|    W&B     |                                                                                                              |       ❌       |      200GB      |  ✅   |     ❌     |    ✅[^4]     |    ❌     |          ❌          |     ✅     |       ✅       |
+|            | Self-Hostable |   Free Quota    | ANSI | Dark Mode | Live Console | Metadata | Uncommitted Changes | Artifacts | Nested Metric |
+| :--------: | :-----------: | :-------------: | :--: | :-------: | :----------: | :------: | :-----------------: | :-------: | :-----------: |
+| neptune.ai |       ❌       |      200GB      |  ❌   |     ❌     |      ✅       |    ✅     |          ✅          |     ✅     |       ✅       |
+|   MLflow   |       ✅       |   self-hosted   |  ❌   |     ✅     |      ❌       |    ✅     |          ❌          |     ✅     |       ✅       |
+|   Comet    |       ✅       |      500GB      |  ✅   |     ❌     |    ⚠️[^1]    |    ✅     |          ✅          |     ✅     |       ✅       |
+|  ClearML   |     ✅[^2]     | 1GB metrics[^3] |  ✅   |     ✅     |    ✅[^4]     |    ✅     |          ✅          |     ✅     |       ✅       |
+|    W&B     |       ❌       |      200GB      |  ✅   |     ❌     |    ✅[^4]     |    ❌     |          ❌          |     ✅     |       ✅       |
 
 - **Live Console:** I can view the progress of my experiment from any device.
 
@@ -33,3 +29,5 @@ title: Awesome Experiment Tracking
 ## ClearML
 
 ### ClearML Cons
+
+- 
