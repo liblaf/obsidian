@@ -1,19 +1,19 @@
 ---
 created: 2025-05-05T21:08:49+08:00
-modified: 2025-05-21T15:35:19+08:00
+modified: 2025-07-16T05:17:15+08:00
 tags:
   - Awesome_List
   - Experiment_Tracking
 title: Awesome Experiment Tracking
 ---
 
-|            | Self-Hostable |   Free Quota    | ANSI | Dark Mode | Live Console | Metadata | Uncommitted Changes | Artifacts | Nested Metric |
-| :--------: | :-----------: | :-------------: | :--: | :-------: | :----------: | :------: | :-----------------: | :-------: | :-----------: |
-| neptune.ai |       ❌       |      200GB      |  ❌   |     ❌     |      ✅       |    ✅     |          ✅          |     ✅     |       ✅       |
-|   MLflow   |       ✅       |   self-hosted   |  ❌   |     ✅     |      ❌       |    ✅     |          ❌          |     ✅     |       ✅       |
-|   Comet    |       ✅       |      500GB      |  ✅   |     ❌     |    ⚠️[^1]    |    ✅     |          ✅          |     ✅     |       ✅       |
-|  ClearML   |     ✅[^2]     | 1GB metrics[^3] |  ✅   |     ✅     |    ✅[^4]     |    ✅     |          ✅          |     ✅     |       ✅       |
-|    W&B     |       ❌       |      200GB      |  ✅   |     ❌     |    ✅[^4]     |    ❌     |          ❌          |     ✅     |       ✅       |
+|            |                          PyPI Downloads                           | Self-Hostable |   Free Quota    | ANSI | Dark Mode | Live Console | Metadata | Uncommitted Changes | Artifacts | Nested Metric |
+| :--------: | :---------------------------------------------------------------: | :-----------: | :-------------: | :--: | :-------: | :----------: | :------: | :-----------------: | :-------: | :-----------: |
+| neptune.ai | ![PyPI - Downloads](https://img.shields.io/pypi/dm/neptune-scale) |       ❌       |      200GB      |  ❌   |     ❌     |      ✅       |    ✅     |          ✅          |     ✅     |       ✅       |
+|   MLflow   |    ![PyPI - Downloads](https://img.shields.io/pypi/dm/mlflow)     |       ✅       |   self-hosted   |  ❌   |     ✅     |      ❌       |    ✅     |          ❌          |     ✅     |       ✅       |
+|   Comet    |   ![PyPI - Downloads](https://img.shields.io/pypi/dm/comet-ml)    |       ✅       |      500GB      |  ✅   |     ❌     |    ⚠️[^1]    |    ✅     |          ✅          |     ✅     |       ✅       |
+|  ClearML   |    ![PyPI - Downloads](https://img.shields.io/pypi/dm/clearml)    |     ✅[^2]     | 1GB metrics[^3] |  ✅   |     ✅     |    ✅[^4]     |    ✅     |          ✅          |     ✅     |       ✅       |
+|    W&B     |     ![PyPI - Downloads](https://img.shields.io/pypi/dm/wandb)     |       ❌       |      200GB      |  ✅   |     ❌     |    ✅[^4]     |    ❌     |          ❌          |     ✅     |       ✅       |
 
 - **Live Console:** I can view the progress of my experiment from any device.
 
@@ -29,5 +29,3 @@ title: Awesome Experiment Tracking
 ## ClearML
 
 ### ClearML Cons
-
-- 
