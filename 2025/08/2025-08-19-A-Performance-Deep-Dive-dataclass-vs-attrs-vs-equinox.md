@@ -1,6 +1,6 @@
 ---
 created: 2025-08-19T20:32:16+08:00
-modified: 2025-08-19T21:00:25+08:00
+modified: 2025-08-19T21:06:17+08:00
 tags:
   - Programming/Python
 title: "A Performance Deep Dive: `dataclass` vs. `attrs` vs. `equinox`"
@@ -22,7 +22,7 @@ title: "A Performance Deep Dive: `dataclass` vs. `attrs` vs. `equinox`"
 
 - **[`attrs`](https://www.attrs.org/) is the fastest** across the board in all tested categories: instantiation, attribute access, and method access.
 - **[`dataclasses`](https://docs.python.org/3/library/dataclasses.html)** are a very close second, showing excellent performance with the benefit of being in the standard library.
-- **[`equinox.Module`](https://docs.kidger.site/equinox/) is significantly slower** in these micro-benchmarks. This is not a flaw, but a deliberate trade-off. `equinox` adds a considerable amount of functionality --- most importantly, deep integration with the JAX PyTree ecosystem—which introduces overhead. This overhead is the price for features that are essential when building complex, JAX-native models.
+- **[`equinox.Module`](https://docs.kidger.site/equinox/) is significantly slower** in these micro-benchmarks. This is not a flaw, but a deliberate trade-off. `equinox` adds a considerable amount of functionality --- most importantly, deep integration with the JAX PyTree ecosystem --- which introduces overhead. This overhead is the price for features that are essential when building complex, JAX-native models.
 
 ## Introduction
 
