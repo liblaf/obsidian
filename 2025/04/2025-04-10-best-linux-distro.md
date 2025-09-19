@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T19:19:58+08:00
-modified: 2025-04-27T00:38:12+08:00
+modified: 2025-09-19T14:57:21+08:00
 tags:
   - Dotfiles
   - OS/Linux
@@ -41,6 +41,21 @@ title: Best Linux Distro
 |                Zenned                |   🔴   |     |     |                    |
 
 ## Why didn't I choose ...?
+
+### Why didn't I choose "Windows"?
+
+What can I say?
+
+### Why didn't I choose "Ubuntu"?
+
+- Packagess
+
+### Why didn't I choose "Arch Linux"?
+
+CachyOS offers a more user-friendly graphical installation interface, and convenient packages, including but not limited to:
+
+- [cachyos-snapper-support](https://github.com/CachyOS/CachyOS-PKGBUILDS/tree/master/cachyos-snapper-support)
+- [grub-btrfs-support](https://github.com/CachyOS/CachyOS-PKGBUILDS/tree/master/grub-btrfs-support)
 
 ### Why didn't I choose "Artix Linux"?
 
