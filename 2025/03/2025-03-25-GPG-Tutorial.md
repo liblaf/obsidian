@@ -1,6 +1,6 @@
 ---
 created: 2025-03-25T08:49:16+08:00
-modified: 2025-03-25T12:30:21+08:00
+modified: 2025-09-12T15:32:13+08:00
 tags:
   - Git
   - GPG
@@ -19,8 +19,8 @@ title: GPG Tutorial
 
 ### What are public and secret keys?
 
-- Anyone with a **public key** can **encrypt** a message, yielding a *ciphertext*.
-- Only the corresponding **private key** can **decrypt** the *ciphertext* to obtain the original message.
+- Anyone with a **public key** can **encrypt** a message, yielding a _ciphertext_.
+- Only the corresponding **private key** can **decrypt** the _ciphertext_ to obtain the original message.
 
 ## Introduction
 
@@ -28,7 +28,7 @@ title: GPG Tutorial
 
 **Public-key cryptography**, or **asymmetric cryptography**, is the field of cryptographic systems that use pairs of related keys. Each key pair consists of a **public key** and a corresponding **private key**. Key pairs are generated with cryptographic algorithms based on mathematical problems termed one-way functions. Security of public-key cryptography depends on keeping the private key secret; the public key can be openly distributed without compromising security.
 
-In a **public-key encryption** system, anyone with a public key can encrypt a message, yielding a *ciphertext*, but only those who know the corresponding private key can decrypt the ciphertext to obtain the original message.
+In a **public-key encryption** system, anyone with a public key can encrypt a message, yielding a _ciphertext_, but only those who know the corresponding private key can decrypt the ciphertext to obtain the original message.
 
 For example, a journalist can publish the public key of an encryption key pair on a web site so that sources can send secret messages to the news organization in ciphertext.
 
@@ -38,7 +38,7 @@ Only the journalist who knows the corresponding private key can decrypt the ciph
 
 ### GNU Privacy Guard[^gnupg]
 
-GnuPG is a complete and free implementation of the OpenPGP standard as defined by [RFC4880](https://www.ietf.org/rfc/rfc4880.txt) (also known as *PGP*). GnuPG allows you to encrypt and sign your data and communications; it features a versatile key management system, along with access modules for all kinds of public key directories. GnuPG, also known as *GPG*, is a command line tool with features for easy integration with other applications.
+GnuPG is a complete and free implementation of the OpenPGP standard as defined by [RFC4880](https://www.ietf.org/rfc/rfc4880.txt) (also known as _PGP_). GnuPG allows you to encrypt and sign your data and communications; it features a versatile key management system, along with access modules for all kinds of public key directories. GnuPG, also known as _GPG_, is a command line tool with features for easy integration with other applications.
 
 [^gnupg]: [The GNU Privacy Guard](https://www.gnupg.org/)
 
