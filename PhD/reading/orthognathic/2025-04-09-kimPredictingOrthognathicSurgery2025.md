@@ -1,12 +1,12 @@
 ---
 created: 2025-04-09T14:11:00+08:00
-modified: 2025-04-15T13:58:01+08:00
+modified: 2025-09-19T15:22:24+08:00
 tags:
   - Orthognathic
 title: Predicting orthognathic surgery results as postoperative lateral cephalograms using graph neural networks and diffusion models
 ---
 
-> Kim, I.-H., Jeong, J., Kim, J.-S., et al. 2025. Predicting orthognathic surgery results as postoperative lateral cephalograms using graph neural networks and diffusion models. *Nature Communications* *16*, 1, 2586.
+> Kim, I.-H., Jeong, J., Kim, J.-S., et al. 2025. Predicting orthognathic surgery results as postoperative lateral cephalograms using graph neural networks and diffusion models. _Nature Communications_ _16_, 1, 2586.
 
 ## Abstract
 
