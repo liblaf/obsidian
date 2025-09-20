@@ -1,10 +1,11 @@
 ---
 category:
   - Posts
-title: How To Use More Than 10 Columns in Matrix
-date: "2022-04-10T00:00:00+08:00"
+date: 2022-04-10T08:00:00+08:00
+modified: 2025-09-20T23:06:42+08:00
 tags:
   - LaTeX
+title: How To Use More Than 10 Columns in Matrix
 ---
 
 ```latex
@@ -39,4 +40,4 @@ Extra alignment tab has been changed to \cr.
 
 ## Reference
 
-[^1]: https://tex.stackexchange.com/questions/3519/how-to-use-more-than-10-tab-stops-in-bmatrix-or-other-amsmath-matrix-environment
+[^1]: <https://tex.stackexchange.com/questions/3519/how-to-use-more-than-10-tab-stops-in-bmatrix-or-other-amsmath-matrix-environment>

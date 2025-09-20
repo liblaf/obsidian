@@ -1,10 +1,11 @@
 ---
 category:
   - Posts
-title: Clash Auto Select
-date: "2023-02-10T00:00:00+08:00"
+date: 2023-02-10T08:00:00+08:00
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - Clash
+title: Clash Auto Select
 ---
 
 ## Edit Parsers

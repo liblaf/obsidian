@@ -2,7 +2,8 @@
 category:
   - Reading Notes
   - Research
-date: "2023-04-06T00:00:00+08:00"
+date: 2023-04-06T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - Face_Model
 title: "SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator"
@@ -31,7 +32,7 @@ title: "SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric G
 - apply ICT[^1] to align **multi-view scans** to the facial soft tissues captured in **CT**
 - 29 skeleton and 15 face surface **semantic landmarks** for model registration
 
-[^1]: P.J. Besl and Neil D. McKay. 1992. A method for registration of 3-D shapes. IEEE Transactions on Pattern Analysis and Machine Intelligence 14, 2 (1992), 239–256. https://doi.org/10.1109/34.121791
+[^1]: P.J. Besl and Neil D. McKay. 1992. A method for registration of 3-D shapes. IEEE Transactions on Pattern Analysis and Machine Intelligence 14, 2 (1992), 239–256. <https://doi.org/10.1109/34.121791>
 
 ## 5. SCULPTOR Model
 
@@ -81,17 +82,12 @@ $$
 #### Registration on skull
 
 1. skull template $\overline{\vb{T}}_S = \Bqty{\overline{\vb{T}}_{mdb}, \overline{\vb{T}}_{mxl}}$ and CT skull $\vb{C}_S$ are roughly aligned using **Procrustes rigid alignment on landmark correspondences**
-
-2.
-
-3.
-
 4. use embedded deformation to recover skull details
    1. sample control nodes $x \in \mathcal{N}$ on the template surface with interval $\sigma$
-
-   2. $$
+$$
       v' = \sum_{x \in \mathcal{N}} w(x, v) M v
-      $$
+      
+$$
       - $M$ --- transformation of node $x$
       - $w(\cdot)$ --- influence weight of node $x$ on $v$ (Radial Basis Function[^2])
       - $CD(\cdot)$ --- Chamfer Distance[^3] between two meshes
@@ -99,15 +95,15 @@ $$
 
       $$
       E_{rskull} = E_d + \lambda_l E_{lmk} + \lambda_r E_{reg}
-      $$
+      
+$$
 
       $$
       E_d = \lambda_d CD(\overline{\vb{T}}_S', \vb{C}_S) + (1 - \lambda_d) CD_n(\overline{\vb{T}}_s', \vb{C}_S)
-      $$
+      
+$$
 
-5.
-
-[^2]: Taehyun Rhee, J.P. Lewis, Ulrich Neumann, and Krishna Nayak. 2007. Soft-Tissue Deformation for In Vivo Volume Animation. In 15th Pacific Conference on Computer Graphics and Applications (PG'07). 435–438. https://doi.org/10.1109/PG.2007.46
+[^2]: Taehyun Rhee, J.P. Lewis, Ulrich Neumann, and Krishna Nayak. 2007. Soft-Tissue Deformation for In Vivo Volume Animation. In 15th Pacific Conference on Computer Graphics and Applications (PG'07). 435–438. <https://doi.org/10.1109/PG.2007.46>
 
 #### Registration on face
 
@@ -122,7 +118,7 @@ $$
 #### Learning on LUCY
 
 - train $\Bqty{\overline{\vb{T}}, \mathcal{S}, \mathcal{D}}$
-- we compute $\mathcal{D}$ by performing PCA on the vertex offset of pre- and post-surgery data by $d_i = \vb{T}_{post}^i - \vb{T}_{pre}^i$ to model the trait component.
+- we compute $\mathcal{D}$ by performing PCA on the vertex offset of preand post-surgery data by $d_i = \vb{T}_{post}^i - \vb{T}_{pre}^i$ to model the trait component.
 
 #### Learning on FaceScape
 

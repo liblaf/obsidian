@@ -1,13 +1,14 @@
 ---
 category:
   - Research
-title: Build ijkplayer with lib-monitor
-date: "2022-08-04T00:00:00+08:00"
+date: 2022-08-04T08:00:00+08:00
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - Android
   - Clang
-  - NDK
   - ijkplayer
+  - NDK
+title: Build ijkplayer with lib-monitor
 ---
 
 ## Environment Setup

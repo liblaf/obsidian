@@ -2,8 +2,8 @@
 category:
   - Reading Notes
   - Research
-date: "2023-01-24T00:00:00+08:00"
-modified: 2025-09-20 21:47:26+08:00
+date: 2023-01-24T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - Body_Model
 title: Automatic Rigging and Animation of 3D Characters

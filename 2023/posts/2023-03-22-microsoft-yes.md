@@ -1,12 +1,13 @@
 ---
 category:
   - Posts
-title: Microsoft YES
-date: "2023-03-22T00:00:00+08:00"
+date: 2023-03-22T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - ChatGPT
   - Copilot
   - Microsoft
+title: Microsoft YES
 ---
 
 巨硬 赢麻了:

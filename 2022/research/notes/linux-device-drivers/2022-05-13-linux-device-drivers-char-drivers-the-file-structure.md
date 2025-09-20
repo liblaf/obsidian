@@ -1,8 +1,9 @@
 ---
 category:
   - Research
-date: "2022-05-13T00:00:00+08:00"
+date: 2022-05-13T08:00:00+08:00
 isOriginal: false
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - C_Cpp
   - Char_Drivers

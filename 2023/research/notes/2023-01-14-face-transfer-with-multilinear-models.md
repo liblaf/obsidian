@@ -2,7 +2,8 @@
 category:
   - Reading Notes
   - Research
-date: "2023-01-14T00:00:00+08:00"
+date: 2023-01-14T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - Face_Model
 title: Face Transfer with Multilinear Models
@@ -187,14 +188,13 @@ $$
 $$
 
 - $m$ --- the mode corresponding to non-fixed attribute
-
 - $\vb{w}_m$ --- a vector of weights for that attribute
-
 - $\vb{M}_{m, i}$ --- corresponding linear basis for the tracked vertex $i$ obtained from
 
   $$
   \vb{M}_m = \mathscr{M} \cp_2 \vb{w}_2^{\top} \dots \cp_{\pqty{m - 1}} \vb{w}_{\pqty{m - 1}}^{\top} \cp_{\pqty{m + 1}} \vb{w}_{\pqty{m + 1}}^{\top} \dots \cp_N \vb{w}_N^{\top}
-  $$
+  
+$$
 
 - If the currently tracked attribute **varies** from frame to frame ( e.g. expression ), we solve the set of linear systems and proceed to the next pair of neighboring frames.
 - If the attribute is **constant** across all frames ( e.g. identity ), we accumulate the mentioned linear systems from each pair of frames and solve them together as one combined system.

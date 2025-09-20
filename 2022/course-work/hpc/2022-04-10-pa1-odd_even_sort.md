@@ -1,7 +1,8 @@
 ---
 category:
   - Course Work
-date: "2022-04-10T00:00:00+08:00"
+date: 2022-04-10T08:00:00+08:00
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - Introduction_to_High_Performance_Computing
   - MPI
@@ -228,7 +229,7 @@ Continuing in this manner, by induction it can be shown that the $i$-th rightmos
 
 We remark that each pass takes $O(n)$ steps, so this algorithm has $O(n^2)$ complexity.
 
-[^6]: ["Five Lectures on CA"](http://liinwww.ira.uka.de/~thw/vl-hiroshima/slides-4.pdf) (PDF). _Liinwww.ira.uka.de_. Retrieved 2017-07-30.
+[^6]: ["Five Lectures on CA"](http://liinwww.ira.uka.de/~thw/vl-hiroshima/slides-4.pdf) (PDF). _Liin<www.ira.uka.de>_. Retrieved 2017-07-30.
 
 [^7]: Lang, Hans Werner. ["The 0-1-principle"](http://www.iti.fh-flensburg.de/lang/algorithmen/sortieren/networks/nulleinsen.htm). _Iti.fh-flensburg.de_. Retrieved 30 July 2017.
 

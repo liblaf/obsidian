@@ -1,12 +1,13 @@
 ---
 category:
   - Posts
-title: Windows Setup
-date: "2022-09-10T00:00:00+08:00"
+date: 2022-09-10T08:00:00+08:00
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - Dell
   - IRST
   - Windows
+title: Windows Setup
 ---
 
 ::: info
@@ -29,7 +30,7 @@ Device: Dell XPS 9320
 ### Install Windows
 
 1. Boot from the USB drive.
-2. If no storage drivers can be found, load drivers from `E:\extra\Intel-Rapid-Storage-Technology-Driver-and-Application_0F5G4_WIN64_19.2.0.1003_A01_03\15063\Drivers\Drivers\VMD\`[^1].
+2. If no storage drivers can be found, load drivers from `E:\extra\Intel-Rapid-Storage-Technology-Driver-and-Application_0F5G4_WIN64_19.2.0.1003_A01_03\15063\Drivers\Drivers\VMD\`.[^1]
 3. Delete all partitions and allocate three partitions: `512GB + 512GB + remaining = 524288MB + 524288MB + remaining`. The first two partitions are for windows, one for windows installation and one for data storage. The remaining partition is reserved for Ubuntu installation.
 
 ### Post Installation
@@ -54,7 +55,6 @@ Device: Dell XPS 9320
    3. [microsoft/PowerToys: Windows system utilities to maximize productivity (github.com)](https://github.com/microsoft/PowerToys)
    4. [zhongyang219/TrafficMonitor: 这是一个用于显示当前网速、CPU 及内存利用率的桌面悬浮窗软件，并支持任务栏显示，支持更换皮肤。 (github.com)](https://github.com/zhongyang219/TrafficMonitor)
    5. [ciderapp/Cider: A new cross-platform Apple Music experience based on Electron and Vue.js written from scratch with performance in mind. 🚀 (github.com)](https://github.com/ciderapp/Cider)
-
 10. [Pulse Secure](https://deny.tsinghua.edu.cn/)
 11. [Adobe Series](https://weibo.com/vposy)
     1. Adobe Acrobat DC

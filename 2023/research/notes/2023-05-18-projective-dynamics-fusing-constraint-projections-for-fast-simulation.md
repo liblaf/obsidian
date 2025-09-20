@@ -2,7 +2,8 @@
 category:
   - Reading Notes
   - Research
-date: "2023-05-18T00:00:00+08:00"
+date: 2023-05-18T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - Physics
   - Projective_Dynamics

@@ -2,7 +2,8 @@
 category:
   - Reading Notes
   - Research
-date: "2023-01-16T00:00:00+08:00"
+date: 2023-01-16T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - Face_Model
 title: Learning a model of facial shape and expression from 4D scans
@@ -164,14 +165,13 @@ $$
 $$
 
 - $\vb{T}$ --- template mesh
-
 - $E_D$ --- measures the scan-to-mesh distance from the scan to the aligned mesh $\vb{T}$
-
 - $E_C$ --- constrains $\vb{T}$ to be close to the current statistical model by penalizing edge differences between $\vb{T}$ and the model $M\pqty{\vec{\beta}, \vec{\theta}, \vec{\psi}}$ as
 
   $$
   E_C = \sum_e \lambda_e \norm{\vb{T}_e - M\pqty{\vec{\beta}, \vec{\theta}, \vec{\psi}}_e}
-  $$
+  
+$$
 
 - $\vb{T}_e, M\pqty{\vec{\beta}, \vec{\theta}, \vec{\psi}}_e$ --- edges of $\vb{T}$ and $M\pqty{\vec{\beta}, \vec{\theta}, \vec{\psi}}$
 - $\lambda_e$ --- an individual weight assigned to each edge

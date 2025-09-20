@@ -1,8 +1,8 @@
 ---
 category:
   - Posts
-date: "2023-06-07T00:00:00+08:00"
-modified: 2025-09-20 21:48:47+08:00
+date: 2023-06-07T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - Honkai:_Star_Rail
 title: "Honkai: Star Rail"

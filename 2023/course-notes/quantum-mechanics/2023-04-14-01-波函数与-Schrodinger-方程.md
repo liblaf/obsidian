@@ -1,7 +1,8 @@
 ---
 category:
   - Course Notes
-date: "2023-04-14T00:00:00+08:00"
+date: 2023-04-14T08:00:00+08:00
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - Quantum_Mechanics
 title: "Chap 1: 波函数与 Schrodinger 方程"
@@ -198,7 +199,8 @@ $$
         & = \int \psi_E^*(\vb*{r}) \hat{A} \psi_E(\vb*{r}) \dd[3]{r}
      \end{split}
    \end{equation*}
-   $$
+   
+$$
 3. **任何 (不显含 $t$ 的) 力学量的测值概率分布也不随时间改变**.
 
 若体系的初态不是能量本征态, 而是若干个能量本征态的叠加 (设 $E$ 取离散值)
@@ -210,7 +212,7 @@ $$
 式中的叠加系数 $C_E$ 为
 
 $$
-C_E = \int \dd[3]{r} \psi_E^*(\vb*{r}) \psi(\vb*{r}, 0)
+C_E = \int \dd[3]{r} \psi_E^_(\vb_{r}) \psi(\vb*{r}, 0)
 $$
 
 由于初态 $\psi(\vb*{r}, 0)$ 唯一确定. 不难证明

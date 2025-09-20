@@ -1,7 +1,8 @@
 ---
 category:
   - Course Work
-date: "2022-03-21T00:00:00+08:00"
+date: 2022-03-21T08:00:00+08:00
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - Introduction_to_High_Performance_Computing
   - MPI

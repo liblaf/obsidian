@@ -2,7 +2,8 @@
 category:
   - Reading Notes
   - Research
-date: "2023-01-15T00:00:00+08:00"
+date: 2023-01-15T08:00:00+08:00
+modified: 2025-09-20T23:07:38+08:00
 tags:
   - Face_Model
 title: "FaceWarehouse: a 3D Facial Expression Database for Visual Computing"

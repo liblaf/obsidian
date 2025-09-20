@@ -1,11 +1,12 @@
 ---
 category:
   - Research
-title: How to Get the Field Name of members in struct
-date: "2022-08-17T00:00:00+08:00"
+date: 2022-08-17T08:00:00+08:00
+modified: 2025-09-20T23:07:39+08:00
 tags:
   - C_Cpp
   - LLVM
+title: How to Get the Field Name of members in struct
 ---
 
 ## What is Debug Info
