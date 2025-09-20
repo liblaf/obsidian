@@ -1,13 +1,13 @@
 ---
 category:
 - Course Work
+date: '2023-03-28T00:00:00+08:00'
 layout: Slide
 reveal:
   width: 1440
-title: Exploration and Practice in Software Engineering (2)
-date: '2023-03-28T00:00:00+08:00'
 tags:
-- Exploration and Practice in Software Engineering (2)
+- Exploration_and_Practice_in_Software_Engineering_(2)
+title: Exploration and Practice in Software Engineering (2)
 ---
 
 @slidestart

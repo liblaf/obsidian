@@ -1,11 +1,11 @@
 ---
 category:
 - Course Work
-title: 'PA1: 奇偶排序（odd_even_sort）'
 date: '2022-04-10T00:00:00+08:00'
 tags:
-- Introduction to High Performance Computing
+- Introduction_to_High_Performance_Computing
 - MPI
+title: 'PA1: 奇偶排序（odd_even_sort）'
 ---
 
 ## Performance

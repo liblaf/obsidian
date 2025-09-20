@@ -2,10 +2,10 @@
 category:
 - Reading Notes
 - Research
-title: 'SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator'
 date: '2023-04-06T00:00:00+08:00'
 tags:
-- Face Model
+- Face_Model
+title: 'SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator'
 ---
 
 | Model                |     Parametric     |       Skull        |        Face        | Anatomically Consistent |       Shape        |        Pose        |     Expression     |     Appearance     |       Trait        |

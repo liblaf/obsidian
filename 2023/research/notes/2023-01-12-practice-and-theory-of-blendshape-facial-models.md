@@ -2,10 +2,10 @@
 category:
 - Reading Notes
 - Research
-title: Practice and Theory of Blendshape Facial Models
 date: '2023-01-12T00:00:00+08:00'
 tags:
-- Face Model
+- Face_Model
+title: Practice and Theory of Blendshape Facial Models
 ---
 
 [[PDF] scribblethink.org](http://www.scribblethink.org/Work/Pdfs/blendshapes_MAIN.pdf)

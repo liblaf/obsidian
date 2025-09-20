@@ -2,10 +2,10 @@
 category:
 - Reading Notes
 - Research
-title: Learning a model of facial shape and expression from 4D scans
 date: '2023-01-16T00:00:00+08:00'
 tags:
-- Face Model
+- Face_Model
+title: Learning a model of facial shape and expression from 4D scans
 ---
 
 - [[PDF] games-cn.org](https://slides.games-cn.org/pdf/GAMES201727李天野.pdf)

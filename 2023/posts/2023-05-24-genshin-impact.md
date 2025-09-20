@@ -3,9 +3,9 @@ category:
 - Posts
 date: '2023-05-24T00:00:00+08:00'
 modified: 2025-09-20 21:48:43+08:00
-title: Genshin Impact
 tags:
-- Genshin Impact
+- Genshin_Impact
+title: Genshin Impact
 ---
 
 > 如果拘泥于真假, 那岂不是就错过了很多美好与感动嘛. --- 宵宫 [^1]

@@ -1,11 +1,11 @@
 ---
 category:
-  - Course Work
+- Course Work
+date: '2023-06-27T00:00:00+08:00'
 layout: Slide
-title: AlphaZero 大作业展示
-date: "2023-06-27T00:00:00+08:00"
 tags:
-  - Exploration and Practice in Software Engineering (2)
+- Exploration_and_Practice_in_Software_Engineering_(2)
+title: AlphaZero 大作业展示
 ---
 
 @slidestart

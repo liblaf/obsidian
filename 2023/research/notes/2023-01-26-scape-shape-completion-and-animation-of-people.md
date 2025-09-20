@@ -2,10 +2,10 @@
 category:
 - Reading Notes
 - Research
-title: 'SCAPE: Shape Completion and Animation of People'
 date: '2023-01-26T00:00:00+08:00'
 tags:
-- Body Model
+- Body_Model
+title: 'SCAPE: Shape Completion and Animation of People'
 ---
 
 ## TL;DR

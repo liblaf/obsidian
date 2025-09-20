@@ -1,13 +1,13 @@
 ---
 category:
 - Posts
-title: Run Tencent Meeting on Ubuntu 22.04
 date: '2022-07-20T00:00:00+08:00'
 tags:
 - Linux
-- Tencent Meeting
+- Tencent_Meeting
 - Ubuntu
-- Ubuntu 22.04
+- Ubuntu_22.04
+title: Run Tencent Meeting on Ubuntu 22.04
 ---
 
 ## Environment

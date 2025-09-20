@@ -2,10 +2,10 @@
 category:
 - Reading Notes
 - Research
-title: 'FaceWarehouse: a 3D Facial Expression Database for Visual Computing'
 date: '2023-01-15T00:00:00+08:00'
 tags:
-- Face Model
+- Face_Model
+title: 'FaceWarehouse: a 3D Facial Expression Database for Visual Computing'
 ---
 
 - <https://ieeexplore.ieee.org/abstract/document/6654137/>

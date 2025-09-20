@@ -1,15 +1,15 @@
 ---
 category:
 - Research
-isOriginal: false
-title: Linux Device Drivers | Char Drivers | The file Structure
 date: '2022-05-13T00:00:00+08:00'
+isOriginal: false
 tags:
 - C/C++
-- Char Drivers
+- Char_Drivers
 - Linux
-- Linux Device Drivers
-- Linux Kernel
+- Linux_Device_Drivers
+- Linux_Kernel
+title: Linux Device Drivers | Char Drivers | The file Structure
 ---
 
 ```c

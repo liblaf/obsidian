@@ -4,9 +4,9 @@ category:
 - Research
 date: '2023-01-10T00:00:00+08:00'
 modified: 2025-09-20 21:47:25+08:00
-title: A Morphable Model For The Synthesis Of 3D Faces
 tags:
-- Face Model
+- Face_Model
+title: A Morphable Model For The Synthesis Of 3D Faces
 ---
 
 [[PDF] acm.org](https://dl.acm.org/doi/pdf/10.1145/311535.311556)

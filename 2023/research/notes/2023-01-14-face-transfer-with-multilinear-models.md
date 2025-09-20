@@ -2,10 +2,10 @@
 category:
 - Reading Notes
 - Research
-title: Face Transfer with Multilinear Models
 date: '2023-01-14T00:00:00+08:00'
 tags:
-- Face Model
+- Face_Model
+title: Face Transfer with Multilinear Models
 ---
 
 - <https://dl.acm.org/doi/abs/10.1145/1185657.1185864>

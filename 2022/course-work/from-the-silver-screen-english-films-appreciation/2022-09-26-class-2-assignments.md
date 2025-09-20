@@ -1,11 +1,11 @@
 ---
 category:
 - Course Work
-title: Class 2 Assignments --- Notting Hill
 date: '2022-09-26T00:00:00+08:00'
 tags:
-- 'From the Silver Screen: English Films Appreciation'
-- Notting Hill
+- From_the_Silver_Screen:_English_Films_Appreciation
+- Notting_Hill
+title: Class 2 Assignments --- Notting Hill
 ---
 
 ## Vocabulary

@@ -1,14 +1,14 @@
 ---
 category:
 - Research
-isOriginal: false
-title: Linux Device Drivers | Allocating Memory
 date: '2022-05-13T00:00:00+08:00'
+isOriginal: false
 tags:
 - C/C++
 - Linux
-- Linux Device Drivers
-- Linux Kernel
+- Linux_Device_Drivers
+- Linux_Kernel
+title: Linux Device Drivers | Allocating Memory
 ---
 
 ###### <linux/slab.h>

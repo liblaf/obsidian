@@ -1,13 +1,13 @@
 ---
 category:
 - Research
-title: How to Build Linux Kernel
 date: '2022-01-26T00:00:00+08:00'
 tags:
 - C/C++
 - Clang
 - LLVM
-- Linux Kernel
+- Linux_Kernel
+title: How to Build Linux Kernel
 ---
 
 |         Environment          |                                                                         Version                                                                          |

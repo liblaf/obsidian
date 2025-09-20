@@ -1,11 +1,11 @@
 ---
 category:
 - Course Work
-title: 'exp3: 测量 OpenMP 并行 for 循环不同调度策略的性能'
 date: '2022-03-28T00:00:00+08:00'
 tags:
-- Introduction to High Performance Computing
+- Introduction_to_High_Performance_Computing
 - OMP
+title: 'exp3: 测量 OpenMP 并行 for 循环不同调度策略的性能'
 ---
 
 | 调度策略           | static     | dynamic    | guided     |

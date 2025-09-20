@@ -1,11 +1,11 @@
 ---
 category:
 - Course Work
-title: 'exp4: 自动向量化与基于 intrinsic 的手动向量化'
 date: '2022-04-04T00:00:00+08:00'
 tags:
-- Introduction to High Performance Computing
+- Introduction_to_High_Performance_Computing
 - intrinsic
+title: 'exp4: 自动向量化与基于 intrinsic 的手动向量化'
 ---
 
 ## Performance

@@ -1,12 +1,12 @@
 ---
 category:
 - Posts
-title: Install Arch Linux with Windows
 date: '2023-03-08T00:00:00+08:00'
 tags:
-- Arch Linux
+- Arch_Linux
 - Linux
 - Windows
+title: Install Arch Linux with Windows
 ---
 
 ## BIOS Setup

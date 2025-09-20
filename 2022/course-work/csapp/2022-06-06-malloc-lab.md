@@ -1,11 +1,11 @@
 ---
 category:
 - Course Work
-title: Malloc Lab
 date: '2022-06-06T00:00:00+08:00'
 tags:
-- Computer Organization and Architecture
-- Malloc Lab
+- Computer_Organization_and_Architecture
+- Malloc_Lab
+title: Malloc Lab
 ---
 
 基于 Segregated Free Lists + First Fit + Immediate Coalescing + Smart Reallocation 实现.

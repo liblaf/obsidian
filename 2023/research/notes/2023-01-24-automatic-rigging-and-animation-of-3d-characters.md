@@ -4,9 +4,9 @@ category:
 - Research
 date: '2023-01-24T00:00:00+08:00'
 modified: 2025-09-20 21:47:26+08:00
-title: Automatic Rigging and Animation of 3D Characters
 tags:
-- Body Model
+- Body_Model
+title: Automatic Rigging and Animation of 3D Characters
 ---
 
 ## TL;DR
