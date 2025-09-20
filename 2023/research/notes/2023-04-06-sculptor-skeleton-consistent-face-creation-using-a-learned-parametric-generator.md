@@ -3,7 +3,7 @@ category:
   - Reading Notes
   - Research
 date: 2023-04-06T08:00:00+08:00
-modified: 2025-09-20T23:07:38+08:00
+modified: 2025-09-20T23:15:05+08:00
 tags:
   - Face_Model
 title: "SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator"
@@ -82,7 +82,7 @@ $$
 #### Registration on skull
 
 1. skull template $\overline{\vb{T}}_S = \Bqty{\overline{\vb{T}}_{mdb}, \overline{\vb{T}}_{mxl}}$ and CT skull $\vb{C}_S$ are roughly aligned using **Procrustes rigid alignment on landmark correspondences**
-4. use embedded deformation to recover skull details
+2. use embedded deformation to recover skull details
    1. sample control nodes $x \in \mathcal{N}$ on the template surface with interval $\sigma$
 $$
       v' = \sum_{x \in \mathcal{N}} w(x, v) M v
@@ -97,18 +97,16 @@ $$
       E_{rskull} = E_d + \lambda_l E_{lmk} + \lambda_r E_{reg}
       
 $$
-
-      $$
+      
+$$
       E_d = \lambda_d CD(\overline{\vb{T}}_S', \vb{C}_S) + (1 - \lambda_d) CD_n(\overline{\vb{T}}_s', \vb{C}_S)
       
 $$
-
 [^2]: Taehyun Rhee, J.P. Lewis, Ulrich Neumann, and Krishna Nayak. 2007. Soft-Tissue Deformation for In Vivo Volume Animation. In 15th Pacific Conference on Computer Graphics and Applications (PG'07). 435–438. <https://doi.org/10.1109/PG.2007.46>
 
 #### Registration on face
-
 $$
-E_{rface} = E_d(\overline{\vb{T}}_f, \vb{C}_f) + \lambda_l E_{lmk} + \lambda_{lap} E_{lap}
+E_{rface} = E_d(\overline{\vb{T}}_f, \vb{C}_f) + \lambda_l E_{lmk} + \lambda_da_da_{lap} E_{lap}
 $$
 
 ### 5.3. Parameter Learning

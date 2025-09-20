@@ -3,7 +3,7 @@ category:
   - Reading Notes
   - Research
 date: 2023-01-16T08:00:00+08:00
-modified: 2025-09-20T23:07:38+08:00
+modified: 2025-09-20T23:15:02+08:00
 tags:
   - Face_Model
 title: Learning a model of facial shape and expression from 4D scans
@@ -172,26 +172,20 @@ $$
   E_C = \sum_e \lambda_e \norm{\vb{T}_e - M\pqty{\vec{\beta}, \vec{\theta}, \vec{\psi}}_e}
   
 $$
-
 - $\vb{T}_e, M\pqty{\vec{\beta}, \vec{\theta}, \vec{\psi}}_e$ --- edges of $\vb{T}$ and $M\pqty{\vec{\beta}, \vec{\theta}, \vec{\psi}}$
 - $\lambda_e$ --- an individual weight assigned to each edge
-
 $$
 E_R = \frac{1}{N} \sum_{k = 1}^N \lambda_k \norm{U\pqty{\vb{v}_k}}^2
 $$
-
 - $E_R$ --- regularization term for each vertex $\vb{v}_k \in \mathbb{R}^3$ in $\vb{T}$
 - $U\pqty{\vb{v}} = \frac{\sum_{\vb{v}_r \in \mathcal{N}\pqty{\vb{v}}} \vb{v}_r - \vb{v}}{\abs{\mathcal{N}\pqty{\vb{v}}}}$
 - $\mathcal{N}\pqty{\vb{v}}$ --- the set of vertices in the one-ring neighborhood of $\vb{v}$
 
 #### Texture-based
-
 $$
 E\pqty{\vb{T}, \vec{\beta}, \vec{\theta}, \vec{\psi}} = E_D + E_C + \lambda_T E_T + E_R + E_P
 $$
-
 - $E_T$ --- measures the **photometric error** between real image $I$ and the rendered textured image $\hat{I}$ of $\vb{T}$ from all $V$ views
-
 $$
 E_T = \sum_{l = 0}^3 \sum_{v = 1}^V \norm{\Gamma\pqty{I_l^{\pqty{v}}} - \Gamma\pqty{\hat{I}_l^{\pqty{v}}}}_F^2
 $$

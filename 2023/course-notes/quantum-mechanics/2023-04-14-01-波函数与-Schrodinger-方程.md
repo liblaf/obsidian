@@ -2,7 +2,7 @@
 category:
   - Course Notes
 date: 2023-04-14T08:00:00+08:00
-modified: 2025-09-20T23:07:39+08:00
+modified: 2025-09-20T23:15:02+08:00
 tags:
   - Quantum_Mechanics
 title: "Chap 1: 波函数与 Schrodinger 方程"
@@ -204,27 +204,20 @@ $$
 3. **任何 (不显含 $t$ 的) 力学量的测值概率分布也不随时间改变**.
 
 若体系的初态不是能量本征态, 而是若干个能量本征态的叠加 (设 $E$ 取离散值)
-
 $$
 \psi(\vb*{r}, 0) = \sum_E C_E \psi_E(\vb*{r})
 $$
-
 式中的叠加系数 $C_E$ 为
-
 $$
 C_E = \int \dd[3]{r} \psi_E^_(\vb_{r}) \psi(\vb*{r}, 0)
 $$
-
 由于初态 $\psi(\vb*{r}, 0)$ 唯一确定. 不难证明
-
 $$
 \begin{equation} \label{eq:37}
   \psi(\vb*{r}, t) = \sum_E C_E \psi_E(\vb*{r}) e^{- i E t / \hbar}
 \end{equation}
 $$
-
 在式 $\eqref{eq:37}$ 所示状态下, 粒子的能量平均值为
-
 $$
 \overline{H} = \sum_E \abs{C_E}^2 E
 $$
