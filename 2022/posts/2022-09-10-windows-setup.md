@@ -1,12 +1,12 @@
 ---
 category:
-- Posts
+  - Posts
 title: Windows Setup
-date: '2022-09-10T00:00:00+08:00'
+date: "2022-09-10T00:00:00+08:00"
 tags:
-- Dell
-- IRST
-- Windows
+  - Dell
+  - IRST
+  - Windows
 ---
 
 ::: info
@@ -49,7 +49,6 @@ Device: Dell XPS 9320
 7. [Office Tool Plus Website - Easy to Deploy Office (landian.vip)](https://otp.landian.vip/en-us/)
 8. [VLC: Official site - Free multimedia solutions for all OS! - VideoLAN](https://www.videolan.org/)
 9. From [GitHub](https://github.com/)
-
    1. [Rufus - Create bootable USB drives the easy way](http://rufus.ie/en/)
    2. [Fndroid/clash_for_windows_pkg: A Windows/macOS GUI based on Clash (github.com)](https://github.com/Fndroid/clash_for_windows_pkg)
    3. [microsoft/PowerToys: Windows system utilities to maximize productivity (github.com)](https://github.com/microsoft/PowerToys)

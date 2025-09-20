@@ -11,6 +11,6 @@ TODO
 
 |                      Framework                      | HiDPI | [PyVista](https://github.com/pyvista/pyvista) |
 | :-------------------------------------------------: | :---: | :-------------------------------------------: |
-|      [Trame](https://github.com/kitware/trame)      |   ✅   |                       ✅                       |
+|      [Trame](https://github.com/kitware/trame)      |  ✅   |                      ✅                       |
 | [DearPyGUI](https://github.com/hoffstadt/DearPyGui) |  🛑   |                      🛑                       |
-|  [NiceGUI](https://github.com/zauberzeug/nicegui)   |   ✅   |                      🛑                       |
+|  [NiceGUI](https://github.com/zauberzeug/nicegui)   |  ✅   |                      🛑                       |

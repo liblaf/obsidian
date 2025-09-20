@@ -1,12 +1,12 @@
 ---
 category:
-- Posts
+  - Posts
 title: Microsoft YES
-date: '2023-03-22T00:00:00+08:00'
+date: "2023-03-22T00:00:00+08:00"
 tags:
-- ChatGPT
-- Copilot
-- Microsoft
+  - ChatGPT
+  - Copilot
+  - Microsoft
 ---
 
 巨硬 赢麻了:

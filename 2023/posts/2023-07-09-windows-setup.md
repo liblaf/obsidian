@@ -1,11 +1,11 @@
 ---
 category:
-- Posts
-date: '2023-07-09T00:00:00+08:00'
+  - Posts
+date: "2023-07-09T00:00:00+08:00"
 modified: 2025-09-20 21:48:51+08:00
 tags:
-- Dell
-- XPS_9320
+  - Dell
+  - XPS_9320
 title: Windows Setup (XPS 9320)
 ---
 

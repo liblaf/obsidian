@@ -1,11 +1,11 @@
 ---
 category:
-- Posts
-date: '2023-03-08T00:00:00+08:00'
+  - Posts
+date: "2023-03-08T00:00:00+08:00"
 tags:
-- Arch_Linux
-- Linux
-- Windows
+  - Arch_Linux
+  - Linux
+  - Windows
 title: Install Arch Linux with Windows
 ---
 

@@ -29,11 +29,13 @@ Dynamic dispatch, or choosing which function implementation to call based on arg
 ## The Experiment
 
 I set up a benchmark to test dispatch performance for three types of input data:
+
 - A simple string (`"str"`)
 - A dictionary (`{"a": 1, "b": 2}`), intended to be dispatched via a `runtime_checkable` protocol `SupportsKeysAndGetItem[KT, VT]`.
 - A list of tuples (`[("a", 1), ("b", 2)]`), intended to be dispatched as an `Iterable[tuple[Any, Any]]`.
 
 For each dispatch method, I registered functions to handle these types:
+
 - `fun_xxx_str(name: str)`
 - `fun_xxx_mapping(data: SupportsKeysAndGetItem)`
 - `fun_xxx_iterable(data: Iterable[tuple[Any, Any]])`
@@ -64,13 +66,13 @@ Several interesting patterns emerge from these results:
 
 1. **`functools.singledispatch` is consistently fast:** Across all test cases, `singledispatch` was remarkably quick and consistent, clocking in around 0.28 microseconds per call. This is expected, as it's a highly optimized part of the standard library.
 2. **Custom `ConditionalDispatcher` shows good performance, with caveats:**
-    - For the `str` test case, it was nearly as fast as `singledispatch` (around 0.25 microseconds). This is likely because the `isinstance(data, str)` check is the first in its chain and very efficient.
-    - For the dictionary (`SupportsKeysAndGetItem` protocol), performance dropped to ~0.68 microseconds. This involved a successful second check, `isinstance(data, SupportsKeysAndGetItem)`, which is a protocol check.
-    - For the list of tuples (`Iterable`), the time increased further to ~5.11 microseconds. This was the third check in the chain (`isinstance(data, Iterable)`), following failed checks for `str` and `SupportsKeysAndGetItem`. The Python documentation's warning about `runtime_checkable` protocol `isinstance` checks potentially being slow might play a role in the cumulative time, particularly for the path taken by the list.
+   - For the `str` test case, it was nearly as fast as `singledispatch` (around 0.25 microseconds). This is likely because the `isinstance(data, str)` check is the first in its chain and very efficient.
+   - For the dictionary (`SupportsKeysAndGetItem` protocol), performance dropped to ~0.68 microseconds. This involved a successful second check, `isinstance(data, SupportsKeysAndGetItem)`, which is a protocol check.
+   - For the list of tuples (`Iterable`), the time increased further to ~5.11 microseconds. This was the third check in the chain (`isinstance(data, Iterable)`), following failed checks for `str` and `SupportsKeysAndGetItem`. The Python documentation's warning about `runtime_checkable` protocol `isinstance` checks potentially being slow might play a role in the cumulative time, particularly for the path taken by the list.
 3. **`plum` is notably slower in this benchmark:**
-	- `plum` was significantly slower than the other two methods, with times ranging from 12 to 20 microseconds. This is roughly 40-70 times slower than `singledispatch`.
-	- The `plum` documentation states that parametric types (like `Iterable[tuple[Any, Any]]`) can incur a performance penalty, and methods with "unfaithful types" (which protocols might be considered) might not benefit from caching. It's plausible that the presence of `SupportsKeysAndGetItem` (a protocol) and `Iterable[tuple[Any, Any]]` as registered types for `fun_plum` forces `plum` into a less optimized dispatch path, potentially impacting all its registered functions, even the one for the simple `str` type.
-	- Interestingly, for `plum`, the dispatch on `SupportsKeysAndGetItem` (`dict` case, 12.08 µs) was slightly faster than on `str` (20.28 µs) and `Iterable` (19.21 µs). The reason for this specific variation isn't immediately obvious from the documentation snippets but underscores that performance can have nuances.
+   - `plum` was significantly slower than the other two methods, with times ranging from 12 to 20 microseconds. This is roughly 40-70 times slower than `singledispatch`.
+   - The `plum` documentation states that parametric types (like `Iterable[tuple[Any, Any]]`) can incur a performance penalty, and methods with "unfaithful types" (which protocols might be considered) might not benefit from caching. It's plausible that the presence of `SupportsKeysAndGetItem` (a protocol) and `Iterable[tuple[Any, Any]]` as registered types for `fun_plum` forces `plum` into a less optimized dispatch path, potentially impacting all its registered functions, even the one for the simple `str` type.
+   - Interestingly, for `plum`, the dispatch on `SupportsKeysAndGetItem` (`dict` case, 12.08 µs) was slightly faster than on `str` (20.28 µs) and `Iterable` (19.21 µs). The reason for this specific variation isn't immediately obvious from the documentation snippets but underscores that performance can have nuances.
 
 ## Conclusion
 

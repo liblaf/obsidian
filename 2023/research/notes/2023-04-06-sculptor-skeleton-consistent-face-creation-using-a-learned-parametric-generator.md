@@ -1,11 +1,11 @@
 ---
 category:
-- Reading Notes
-- Research
-date: '2023-04-06T00:00:00+08:00'
+  - Reading Notes
+  - Research
+date: "2023-04-06T00:00:00+08:00"
 tags:
-- Face_Model
-title: 'SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator'
+  - Face_Model
+title: "SCULPTOR: Skeleton-Consistent Face Creation Using a Learned Parametric Generator"
 ---
 
 | Model                |     Parametric     |       Skull        |        Face        | Anatomically Consistent |       Shape        |        Pose        |     Expression     |     Appearance     |       Trait        |
@@ -87,13 +87,11 @@ $$
 3.
 
 4. use embedded deformation to recover skull details
-
    1. sample control nodes $x \in \mathcal{N}$ on the template surface with interval $\sigma$
 
    2. $$
       v' = \sum_{x \in \mathcal{N}} w(x, v) M v
       $$
-
       - $M$ --- transformation of node $x$
       - $w(\cdot)$ --- influence weight of node $x$ on $v$ (Radial Basis Function[^2])
       - $CD(\cdot)$ --- Chamfer Distance[^3] between two meshes

@@ -1,10 +1,10 @@
 ---
 category:
-- Course Notes
-date: '2023-04-14T00:00:00+08:00'
+  - Course Notes
+date: "2023-04-14T00:00:00+08:00"
 tags:
-- Quantum_Mechanics
-title: 'Chap 1: 波函数与 Schrodinger 方程'
+  - Quantum_Mechanics
+title: "Chap 1: 波函数与 Schrodinger 方程"
 ---
 
 ## 1.1 波函数的统计诠释

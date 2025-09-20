@@ -1,10 +1,10 @@
 ---
 category:
-- Posts
-date: '2023-05-24T00:00:00+08:00'
+  - Posts
+date: "2023-05-24T00:00:00+08:00"
 modified: 2025-09-20 21:48:43+08:00
 tags:
-- Genshin_Impact
+  - Genshin_Impact
 title: Genshin Impact
 ---
 

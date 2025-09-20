@@ -1,10 +1,10 @@
 ---
 category:
-- Posts
+  - Posts
 title: How To Use More Than 10 Columns in Matrix
-date: '2022-04-10T00:00:00+08:00'
+date: "2022-04-10T00:00:00+08:00"
 tags:
-- LaTeX
+  - LaTeX
 ---
 
 ```latex

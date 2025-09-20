@@ -1,11 +1,11 @@
 ---
 category:
-- Course Work
-date: '2022-04-04T00:00:00+08:00'
+  - Course Work
+date: "2022-04-04T00:00:00+08:00"
 tags:
-- Bomb_Lab
-- Computer_Organization_and_Architecture
-title: 'Bomb Lab: read six numbers'
+  - Bomb_Lab
+  - Computer_Organization_and_Architecture
+title: "Bomb Lab: read six numbers"
 ---
 
 ## Assembly

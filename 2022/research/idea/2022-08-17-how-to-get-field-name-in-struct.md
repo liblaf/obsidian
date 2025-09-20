@@ -1,11 +1,11 @@
 ---
 category:
-- Research
+  - Research
 title: How to Get the Field Name of members in struct
-date: '2022-08-17T00:00:00+08:00'
+date: "2022-08-17T00:00:00+08:00"
 tags:
-- C/C++
-- LLVM
+  - C_Cpp
+  - LLVM
 ---
 
 ## What is Debug Info

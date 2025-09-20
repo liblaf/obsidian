@@ -1,11 +1,11 @@
 ---
 category:
-- Reading Notes
-- Research
-date: '2023-01-15T00:00:00+08:00'
+  - Reading Notes
+  - Research
+date: "2023-01-15T00:00:00+08:00"
 tags:
-- Face_Model
-title: 'FaceWarehouse: a 3D Facial Expression Database for Visual Computing'
+  - Face_Model
+title: "FaceWarehouse: a 3D Facial Expression Database for Visual Computing"
 ---
 
 - <https://ieeexplore.ieee.org/abstract/document/6654137/>

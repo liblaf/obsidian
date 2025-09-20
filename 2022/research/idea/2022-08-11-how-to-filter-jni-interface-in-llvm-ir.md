@@ -1,13 +1,13 @@
 ---
 category:
-- Research
+  - Research
 title: How To Filter JNI Interface in LLVM IR
-date: '2022-08-11T00:00:00+08:00'
+date: "2022-08-11T00:00:00+08:00"
 tags:
-- C/C++
-- JNI
-- Java
-- LLVM
+  - C_Cpp
+  - JNI
+  - Java
+  - LLVM
 ---
 
 `JNIEnv` ( aka `const struct JNINativeInterface*`, defined in `jni.h` ) provides a rich interface for accessing Java variables and methods in C/C++. All interfaces are members of `struct.JNINativeInterface`. You can read `jni.h` for more details.

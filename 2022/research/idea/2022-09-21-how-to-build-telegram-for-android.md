@@ -1,12 +1,12 @@
 ---
 category:
-- Research
+  - Research
 title: How to Build Telegram for Android
-date: '2022-09-21T00:00:00+08:00'
+date: "2022-09-21T00:00:00+08:00"
 tags:
-- Android
-- NDK
-- Telegram
+  - Android
+  - NDK
+  - Telegram
 ---
 
 ## TL;DR
@@ -51,4 +51,5 @@ In Android Studio
 Telegram depends on some prebuilt static libraries. However, ASan requires a shared build.[^2] I haven't find a way to use ASan yet.
 
 [^1]: [DrKLO/Telegram: Telegram for Android source](https://github.com/DrKLO/Telegram#compilation-guide)
+
 [^2]: [Address Sanitizer | Android NDK | Android Developers](https://developer.android.com/ndk/guides/asan)

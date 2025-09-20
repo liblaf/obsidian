@@ -1,14 +1,14 @@
 ---
 category:
-- Research
-date: '2022-05-13T00:00:00+08:00'
+  - Research
+date: "2022-05-13T00:00:00+08:00"
 isOriginal: false
 tags:
-- C/C++
-- Char_Drivers
-- Linux
-- Linux_Device_Drivers
-- Linux_Kernel
+  - C_Cpp
+  - Char_Drivers
+  - Linux
+  - Linux_Device_Drivers
+  - Linux_Kernel
 title: Linux Device Drivers | Char Drivers | File Operations
 ---
 

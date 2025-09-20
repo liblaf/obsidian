@@ -1,10 +1,10 @@
 ---
 category:
-- Reading Notes
-- Research
-date: '2023-01-14T00:00:00+08:00'
+  - Reading Notes
+  - Research
+date: "2023-01-14T00:00:00+08:00"
 tags:
-- Face_Model
+  - Face_Model
 title: Face Transfer with Multilinear Models
 ---
 

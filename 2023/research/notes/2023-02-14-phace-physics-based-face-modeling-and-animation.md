@@ -1,13 +1,13 @@
 ---
 category:
-- Reading Notes
-- Research
-date: '2023-02-14T00:00:00+08:00'
+  - Reading Notes
+  - Research
+date: "2023-02-14T00:00:00+08:00"
 modified: 2025-09-20 21:47:50+08:00
 tags:
-- Face_Model
-- Physics
-title: 'Phace: Physics-based Face Modeling and Animation'
+  - Face_Model
+  - Physics
+title: "Phace: Physics-based Face Modeling and Animation"
 ---
 
 ## 1. Introduction

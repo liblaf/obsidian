@@ -226,24 +226,28 @@ When evaluating and comparing iAsk and Question Refinement Guide, several factor
 ### iAsk Evaluation
 
 **Strengths:**
+
 1. **Comprehensiveness:** iAsk takes a detailed, iterative approach by continuously prompting the user to refine and specify their question. It asks targeted follow-up questions like the context of use (personal, educational, commercial) and country-specific laws, which help enrich the user's inquiry.
 2. **Engagement:** iAsk remains engaged throughout the conversation, acknowledging the user's inputs and suggesting new dimensions to consider, like the role of attribution and practical challenges.
 3. **Focus on Educational Context:** It provides clear focus areas related to educational contexts, such as understanding Creative Commons and country-specific exceptions, making it relevant for the user's needs.
 4. **Guidance:** The assistant leads the conversation toward a well-rounded, comprehensive question by constantly adding relevant variables like practical implementation and resources for educators.
 
 **Weaknesses:**
+
 1. **Complexity:** iAsk might delve too deep into layers of inquiry, potentially overwhelming users who might only be looking for basic guidance.
 2. **Assumption of Legal Knowledge:** It assumes some prior understanding of copyright concepts, which could confuse users without legal backgrounds.
 
 ### Question Refinement Guide Evaluation
 
 **Strengths:**
+
 1. **Clarity and Directness:** The assistant quickly hones in on specific aspects needed for copyright compliance for a commercial website without excessive probing or assumptions.
 2. **Specificity for Commercial Context:** By focusing on licensing and attribution requirements for commercial purposes, it directly addresses the user's main concerns.
 3. **User-Focused Inquiry:** The guide asks pertinent questions early about the user's experience, platforms used, and the nature of images needed, which allows it to tailor the response effectively.
 4. **Efficiency:** With targeted questions, the assistant rapidly distills the user's concerns into a refined and precise question.
 
 **Weaknesses:**
+
 1. **Less Explorative:** The Question Refinement Guide does not explore broader implications or alternative scenarios like educational settings or fair use, which might limit users interested in a broader context.
 2. **Engagement:** It engages less in developing the user's knowledge about copyright, focusing more on solving the immediate query.
 

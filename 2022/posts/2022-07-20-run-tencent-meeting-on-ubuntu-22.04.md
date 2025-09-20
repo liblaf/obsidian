@@ -1,12 +1,12 @@
 ---
 category:
-- Posts
-date: '2022-07-20T00:00:00+08:00'
+  - Posts
+date: "2022-07-20T00:00:00+08:00"
 tags:
-- Linux
-- Tencent_Meeting
-- Ubuntu
-- Ubuntu_22.04
+  - Linux
+  - Tencent_Meeting
+  - Ubuntu
+  - Ubuntu_22.04
 title: Run Tencent Meeting on Ubuntu 22.04
 ---
 

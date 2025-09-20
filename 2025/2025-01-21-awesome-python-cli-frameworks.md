@@ -10,8 +10,8 @@ title: Awesome Python CLI Libraries
 
 |                                                   | SubCommends | Fish Shell Completion | Colorful Help | Markdown Help | Options Reuse |     |     |     |     |
 | :-----------------------------------------------: | :---------: | :-------------------: | :-----------: | :-----------: | :-----------: | --- | --- | --- | --- |
-|     [Typer](https://github.com/fastapi/typer)     |      ✅      |        dynamic        |       ✅       |       ✅       |  cumbersome   |     |     |     |     |
+|     [Typer](https://github.com/fastapi/typer)     |     ✅      |        dynamic        |      ✅       |      ✅       |  cumbersome   |     |     |     |     |
 |   [cleo](https://github.com/python-poetry/cleo)   |             |                       |               |               |               |     |     |     |     |
-| [cyclopts](https://github.com/BrianPugh/cyclopts) |      ✅      |                       |               |               |               |     |     |     |     |
-|      [tyro](https://github.com/brentyi/tyro)      |      ✅      |                       |               |               |               |     |     |     |     |
-|       [feud](https://github.com/eonu/feud)        |      ✅      |                       |               |               |               |     |     |     |     |
+| [cyclopts](https://github.com/BrianPugh/cyclopts) |     ✅      |                       |               |               |               |     |     |     |     |
+|      [tyro](https://github.com/brentyi/tyro)      |     ✅      |                       |               |               |               |     |     |     |     |
+|       [feud](https://github.com/eonu/feud)        |     ✅      |                       |               |               |               |     |     |     |     |

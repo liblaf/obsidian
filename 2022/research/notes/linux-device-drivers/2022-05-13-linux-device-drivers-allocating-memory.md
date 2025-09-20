@@ -1,13 +1,13 @@
 ---
 category:
-- Research
-date: '2022-05-13T00:00:00+08:00'
+  - Research
+date: "2022-05-13T00:00:00+08:00"
 isOriginal: false
 tags:
-- C/C++
-- Linux
-- Linux_Device_Drivers
-- Linux_Kernel
+  - C_Cpp
+  - Linux
+  - Linux_Device_Drivers
+  - Linux_Kernel
 title: Linux Device Drivers | Allocating Memory
 ---
 

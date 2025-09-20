@@ -1,11 +1,11 @@
 ---
 category:
-- Course Work
-date: '2022-05-23T00:00:00+08:00'
+  - Course Work
+date: "2022-05-23T00:00:00+08:00"
 tags:
-- CUDA
-- Introduction_to_High_Performance_Computing
-title: 'exp7: CUDA 优化 (global memory, shared memory)'
+  - CUDA
+  - Introduction_to_High_Performance_Computing
+title: "exp7: CUDA 优化 (global memory, shared memory)"
 ---
 
 ## 分析 `test_gmem.cu` 的性能变化来源

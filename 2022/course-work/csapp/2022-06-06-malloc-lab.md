@@ -1,10 +1,10 @@
 ---
 category:
-- Course Work
-date: '2022-06-06T00:00:00+08:00'
+  - Course Work
+date: "2022-06-06T00:00:00+08:00"
 tags:
-- Computer_Organization_and_Architecture
-- Malloc_Lab
+  - Computer_Organization_and_Architecture
+  - Malloc_Lab
 title: Malloc Lab
 ---
 

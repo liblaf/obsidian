@@ -1,10 +1,10 @@
 ---
 category:
-- Posts
+  - Posts
 title: Clash Auto Select
-date: '2023-02-10T00:00:00+08:00'
+date: "2023-02-10T00:00:00+08:00"
 tags:
-- Clash
+  - Clash
 ---
 
 ## Edit Parsers
@@ -32,4 +32,5 @@ parsers:
 ## Reference
 
 [^1]: <https://docs.cfw.lbyczf.com/contents/parser.html> "配置文件预处理 | Clash for Windows"
+
 [^2]: <https://lancellc.gitbook.io/clash/clash-config-file/proxy-groups/auto> "Auto - Clash"

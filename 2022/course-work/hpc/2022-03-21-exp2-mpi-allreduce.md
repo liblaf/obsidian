@@ -1,11 +1,11 @@
 ---
 category:
-- Course Work
-date: '2022-03-21T00:00:00+08:00'
+  - Course Work
+date: "2022-03-21T00:00:00+08:00"
 tags:
-- Introduction_to_High_Performance_Computing
-- MPI
-title: 'exp2: MPI Allreduce'
+  - Introduction_to_High_Performance_Computing
+  - MPI
+title: "exp2: MPI Allreduce"
 ---
 
 ## Ring Allreduce 算法

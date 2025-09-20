@@ -1,12 +1,12 @@
 ---
 category:
-- Reading Notes
-- Research
-date: '2023-05-18T00:00:00+08:00'
+  - Reading Notes
+  - Research
+date: "2023-05-18T00:00:00+08:00"
 tags:
-- Physics
-- Projective_Dynamics
-title: 'Projective Dynamics: Fusing Constraint Projections for Fast Simulation'
+  - Physics
+  - Projective_Dynamics
+title: "Projective Dynamics: Fusing Constraint Projections for Fast Simulation"
 ---
 
 ## Formula
