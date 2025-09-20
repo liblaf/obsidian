@@ -1,6 +1,6 @@
 ---
-created: 2025-03-20T13:03:12+08:00
-modified: 2025-03-25T08:49:07+08:00
+date: 2025-03-20T13:03:12+08:00
+modified: 2025-09-20T18:37:24+08:00
 tags:
   - Programming/Go
 title: Awesome Go

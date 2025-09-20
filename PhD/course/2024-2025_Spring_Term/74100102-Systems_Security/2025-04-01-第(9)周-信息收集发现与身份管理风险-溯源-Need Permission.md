@@ -1,6 +1,6 @@
 ---
-created: 2025-04-01T00:00:00+08:00
-modified: 2025-04-20T19:28:42+08:00
+date: 2025-04-01T00:00:00+08:00
+modified: 2025-09-20T18:41:17+08:00
 tags:
   - PhD/Course/Systems_Security
 title: 第(9)周-信息收集发现与身份管理风险-溯源-Need Permission

@@ -1,6 +1,6 @@
 ---
-created: 2025-08-19T20:32:16+08:00
-modified: 2025-08-19T21:06:17+08:00
+date: 2025-08-19T20:32:16+08:00
+modified: 2025-09-20T18:38:10+08:00
 tags:
   - Programming/Python
 title: "A Performance Deep Dive: `dataclass` vs. `attrs` vs. `equinox`"

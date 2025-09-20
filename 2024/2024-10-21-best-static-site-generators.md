@@ -1,6 +1,6 @@
 ---
-created: 2024-10-21T17:27:02+08:00
-modified: 2025-03-01T16:46:53+08:00
+date: 2024-10-21T17:27:02+08:00
+modified: 2025-09-20T18:39:27+08:00
 tags:
   - TODO
 title: Best Static Site Generators

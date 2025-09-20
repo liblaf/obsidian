@@ -1,6 +1,6 @@
 ---
-created: 2025-06-20T14:33:59+08:00
-modified: 2025-06-20T14:47:44+08:00
+date: 2025-06-20T14:33:59+08:00
+modified: 2025-09-20T18:38:05+08:00
 title: "Exploring Dispatch Performance in Python: Plum vs. `singledispatch` vs. Custom"
 ---
 
