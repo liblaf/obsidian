@@ -1,6 +1,6 @@
 ---
-created: 2025-06-04T22:02:00+08:00
-modified: 2025-06-04T22:14:46+08:00
+date: 2025-06-04T22:02:00+08:00
+modified: 2025-09-20T18:38:01+08:00
 tags:
   - JAX
   - JIT
@@ -175,18 +175,18 @@ print(foo.c)      # Prints "Computing c ..." AGAIN!
 
 - **Visibility to JAX**: Because `_c_cache` is a registered field in the `PyTreeNode`, JAX includes it in its tracing process. When `foo` is an input to a JITted function, the _current value_ of `foo._c_cache` is made available to the traced function.
 - **Side Effects in JIT**: JITted functions are ideally pure from JAX's perspective. Modifying an input object's attribute (like `_c_cache = ...` inside the property `c` when called from `use_c`) is a side effect.
-	- When `c` is called from `use_c`, the property `c` itself is _not_ JIT-compiled. It executes as regular Python code _during the JIT trace or execution of `use_c`_.
-	- The assignment `self._c_cache = ...` happens on the _traced_ representation of `foo`. This update is visible _within the current execution_ of the JITted function `use_c`.
-	- However, this internal update doesn't automatically propagate back to the original Python object `foo` that was passed into `use_c`. JAX usually requires you to explicitly return modified objects if you want to see their changes outside the JITted function.
+  - When `c` is called from `use_c`, the property `c` itself is _not_ JIT-compiled. It executes as regular Python code _during the JIT trace or execution of `use_c`_.
+  - The assignment `self._c_cache = ...` happens on the _traced_ representation of `foo`. This update is visible _within the current execution_ of the JITted function `use_c`.
+  - However, this internal update doesn't automatically propagate back to the original Python object `foo` that was passed into `use_c`. JAX usually requires you to explicitly return modified objects if you want to see their changes outside the JITted function.
 
 ## Key Takeaways & Best Practices
 
 1. **JIT and Instance State:** `jax.jit` primarily cares about the data in the registered fields of your `PyTreeNode`s. Python's internal mechanisms like `__dict__` (used by `functools.cached_property`) are generally opaque to JIT and are not part of the traced state of a `PyTreeNode`.
 2. **Caching Scope:**
-	- `@functools.cached_property`: Caching works reliably outside JIT. Inside JIT, or when the property itself is JITted, its reliance on `__dict__` makes it behave unexpectedly because `__dict__` isn't a JAX-traced field.
-	- **Manual Cache Field**: If the cache is a JAX-registered field (like `_c_cache`):
-		- If populated _before_ calling the JITted function, the JITted function will see the cached value.
-		- If the caching logic (property setter) is called _from within_ a JITted function, it modifies an _internal, traced version_ of the object. This change doesn't affect the original external object or persist to subsequent independent calls to the JITted function with the same original object, unless you explicitly return the modified object from the JITted function and use that returned instance for further operations.
+   - `@functools.cached_property`: Caching works reliably outside JIT. Inside JIT, or when the property itself is JITted, its reliance on `__dict__` makes it behave unexpectedly because `__dict__` isn't a JAX-traced field.
+   - **Manual Cache Field**: If the cache is a JAX-registered field (like `_c_cache`):
+     - If populated _before_ calling the JITted function, the JITted function will see the cached value.
+     - If the caching logic (property setter) is called _from within_ a JITted function, it modifies an _internal, traced version_ of the object. This change doesn't affect the original external object or persist to subsequent independent calls to the JITted function with the same original object, unless you explicitly return the modified object from the JITted function and use that returned instance for further operations.
 3. **Purity and Side Effects:** JAX prefers pure functions (functions that don't have side effects). Modifying an object's state within a JITted function is a side effect. While JAX can sometimes handle updates to its own registered fields (like `_c_cache`), it's often clearer to design JITted functions to take inputs and produce outputs, with state updates handled by passing modified objects out of the function.
 
 ## In Conclusion

@@ -1,6 +1,6 @@
 ---
-created: 2025-05-02T22:08:56+08:00
-modified: 2025-05-02T23:01:07+08:00
+date: 2025-05-02T22:08:56+08:00
+modified: 2025-09-20T18:37:56+08:00
 tags:
   - OS/Linux/Arch/CachyOS
   - ZFS

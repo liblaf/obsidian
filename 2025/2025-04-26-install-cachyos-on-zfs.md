@@ -1,6 +1,6 @@
 ---
-created: 2025-04-26T23:55:35+08:00
-modified: 2025-04-27T00:37:56+08:00
+date: 2025-04-26T23:55:35+08:00
+modified: 2025-09-20T18:37:51+08:00
 tags:
   - Dotfiles
   - OS/Linux/Arch
