@@ -1,6 +1,6 @@
 ---
-date: 2025-03-28T19:15:42+08:00
-modified: 2025-09-20T18:37:28+08:00
+created: 2025-03-28T19:15:42+08:00
+modified: 2025-03-28T19:49:29+08:00
 tags:
   - Laboratory
   - PhD
@@ -27,15 +27,15 @@ NVIDIA GPUs default to **non-persistent mode**. When idle, `nvidia-smi` response
 
 1. **Temporary Persistence Mode Activation**
 
-   ```bash
-   nvidia-smi --persistence-mode=1
-   ```
+   ```bash  
+   nvidia-smi --persistence-mode=1  
+   ```  
 
 2. **Permanent Daemon Configuration**
 
-   ```bash
-   sudo systemctl enable --now nvidia-persistenced.service
-   ```
+   ```bash  
+   sudo systemctl enable --now nvidia-persistenced.service  
+   ```  
 
 > Reference: [NVIDIA/Tips and tricks - ArchWiki](https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Driver_persistence)
 
@@ -78,15 +78,15 @@ GPU drivers failed to load after reboot.
 
 1. Rebuilt drivers via DKMS:
 
-   ```bash
-   sudo dkms autoinstall
-   ```
+   ```bash  
+   sudo dkms autoinstall  
+   ```  
 
 2. Verified functionality:
 
-   ```bash
-   nvidia-smi
-   ```
+   ```bash  
+   nvidia-smi  
+   ```  
 
 ###### Key Takeaway
 

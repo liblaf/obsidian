@@ -1,5 +1,5 @@
 ---
-date: 2025-04-09T14:11:00+08:00
+created: 2025-04-09T14:11:00+08:00
 modified: 2025-09-19T15:22:24+08:00
 tags:
   - Orthognathic
@@ -36,8 +36,8 @@ title: Predicting orthognathic surgery results as postoperative lateral cephalog
 ## Data
 
 - 707 pairs of pre-cephs and post-cephs
-  - 550 training
-  - 50 validation
-  - 50 internal test
-  - 57 external test
+	- 550 training
+	- 50 validation
+	- 50 internal test
+	- 57 external test
 - 30,000 unlabeled lateral cephalograms

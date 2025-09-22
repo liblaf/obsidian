@@ -1,8 +1,8 @@
 ---
 categories:
   - Course Work
-date: 2024-09-27T12:41:08+08:00
-modified: 2025-09-20T18:40:08+08:00
+created: 2024-09-27T12:41:08+08:00
+modified: 2024-11-20T17:45:29+08:00
 tags:
   - AIGC
   - PhD/Course/English_for_Doctoral_Students
@@ -39,52 +39,52 @@ The integration of critical thinking skills, effective communication, and cultur
 
 ###### 1. **Improved Quality of Research Papers with Enhanced Clarity, Coherence, and Logical Flow**
 
-- **Critical Thinking Skills**: Encourage students to rigorously analyze and synthesize information, ensuring that their arguments are well-supported and logically structured.
-- **Communication Training**: Provide workshops on academic writing, focusing on clarity, coherence, and logical flow. Use tools like Grammarly or Turnitin for grammar and plagiarism checks.
-- **Mentorship**: Pair students with experienced mentors who can provide feedback on drafts, helping to refine the structure and content of papers.
-- **Institutional Policies**: Implement policies that require multiple rounds of peer review and revisions before final submission.
+   - **Critical Thinking Skills**: Encourage students to rigorously analyze and synthesize information, ensuring that their arguments are well-supported and logically structured.
+   - **Communication Training**: Provide workshops on academic writing, focusing on clarity, coherence, and logical flow. Use tools like Grammarly or Turnitin for grammar and plagiarism checks.
+   - **Mentorship**: Pair students with experienced mentors who can provide feedback on drafts, helping to refine the structure and content of papers.
+   - **Institutional Policies**: Implement policies that require multiple rounds of peer review and revisions before final submission.
 
 ###### 2. **Effective Presentation Skills that Engage Audiences and Convey Complex Ideas Succinctly**
 
-- **Communication Training**: Offer courses or workshops on public speaking, visual presentation, and storytelling techniques.
-- **Technical Tools**: Use presentation software like PowerPoint, Prezi, or Canva to create engaging visuals. Record practice presentations and provide feedback.
-- **Mentorship**: Have mentors or senior students critique practice presentations, offering tips on audience engagement and clarity.
-- **Institutional Policies**: Encourage participation in conferences and seminars, where students can practice their presentation skills in a supportive environment.
+   - **Communication Training**: Offer courses or workshops on public speaking, visual presentation, and storytelling techniques.
+   - **Technical Tools**: Use presentation software like PowerPoint, Prezi, or Canva to create engaging visuals. Record practice presentations and provide feedback.
+   - **Mentorship**: Have mentors or senior students critique practice presentations, offering tips on audience engagement and clarity.
+   - **Institutional Policies**: Encourage participation in conferences and seminars, where students can practice their presentation skills in a supportive environment.
 
 ###### 3. **Constructive Peer Review Processes that Lead to Substantive Improvements in Research and Writing**
 
-- **Critical Thinking Skills**: Train students in the principles of peer review, emphasizing constructive feedback and the importance of critical analysis.
-- **Communication Training**: Provide guidelines on how to give and receive feedback, focusing on the balance between criticism and support.
-- **Mentorship**: Have mentors model effective peer review processes, demonstrating how to provide actionable feedback.
-- **Institutional Policies**: Establish a formal peer review system within the institution, where students can review each other's work and receive credit for their contributions.
+   - **Critical Thinking Skills**: Train students in the principles of peer review, emphasizing constructive feedback and the importance of critical analysis.
+   - **Communication Training**: Provide guidelines on how to give and receive feedback, focusing on the balance between criticism and support.
+   - **Mentorship**: Have mentors model effective peer review processes, demonstrating how to provide actionable feedback.
+   - **Institutional Policies**: Establish a formal peer review system within the institution, where students can review each other's work and receive credit for their contributions.
 
 ###### 4. **Successful Team Collaboration in Diverse Interdisciplinary Settings**
 
-- **Communication Training**: Offer courses on collaborative communication, emphasizing active listening, conflict resolution, and consensus-building.
-- **Technical Tools**: Use collaboration platforms like Slack, Trello, or Google Workspace to facilitate communication and project management.
-- **Mentorship**: Encourage interdisciplinary research projects and pair students with mentors from different fields to foster cross-disciplinary collaboration.
-- **Institutional Policies**: Create policies that support interdisciplinary research, such as funding for collaborative projects and recognition of interdisciplinary work in promotion criteria.
+   - **Communication Training**: Offer courses on collaborative communication, emphasizing active listening, conflict resolution, and consensus-building.
+   - **Technical Tools**: Use collaboration platforms like Slack, Trello, or Google Workspace to facilitate communication and project management.
+   - **Mentorship**: Encourage interdisciplinary research projects and pair students with mentors from different fields to foster cross-disciplinary collaboration.
+   - **Institutional Policies**: Create policies that support interdisciplinary research, such as funding for collaborative projects and recognition of interdisciplinary work in promotion criteria.
 
 ###### 5. **Navigating Cultural Differences to Establish and Maintain Productive Working Relationships with International Partners**
 
-- **Cultural Competence Training**: Provide workshops on cultural awareness, including understanding different communication styles, norms, and expectations.
-- **Communication Training**: Focus on intercultural communication skills, such as empathy, adaptability, and the ability to navigate misunderstandings.
-- **Mentorship**: Pair students with mentors who have experience working internationally, providing guidance on cultural nuances and best practices.
-- **Institutional Policies**: Develop policies that support international collaboration, such as funding for travel and accommodation, and establishing partnerships with international institutions.
+   - **Cultural Competence Training**: Provide workshops on cultural awareness, including understanding different communication styles, norms, and expectations.
+   - **Communication Training**: Focus on intercultural communication skills, such as empathy, adaptability, and the ability to navigate misunderstandings.
+   - **Mentorship**: Pair students with mentors who have experience working internationally, providing guidance on cultural nuances and best practices.
+   - **Institutional Policies**: Develop policies that support international collaboration, such as funding for travel and accommodation, and establishing partnerships with international institutions.
 
 ###### 6. **Successfully Publishing Research in High-Impact, International Journals**
 
-- **Critical Thinking Skills**: Train students in the selection of appropriate journals, understanding journal requirements, and tailoring their work to meet these criteria.
-- **Communication Training**: Offer workshops on writing for publication, including structuring manuscripts, writing abstracts, and responding to reviewer comments.
-- **Mentorship**: Have mentors guide students through the publication process, providing feedback on drafts and helping to navigate the submission process.
-- **Institutional Policies**: Implement policies that encourage publication, such as providing access to journal databases and offering financial support for publication fees.
+   - **Critical Thinking Skills**: Train students in the selection of appropriate journals, understanding journal requirements, and tailoring their work to meet these criteria.
+   - **Communication Training**: Offer workshops on writing for publication, including structuring manuscripts, writing abstracts, and responding to reviewer comments.
+   - **Mentorship**: Have mentors guide students through the publication process, providing feedback on drafts and helping to navigate the submission process.
+   - **Institutional Policies**: Implement policies that encourage publication, such as providing access to journal databases and offering financial support for publication fees.
 
 ###### 7. **Securing International Research Grants and Funding**
 
-- **Critical Thinking Skills**: Train students in grant writing, emphasizing the importance of clear objectives, feasibility, and impact.
-- **Communication Training**: Offer workshops on crafting persuasive grant proposals, including writing compelling narratives and justifying budgets.
-- **Mentorship**: Pair students with mentors who have experience in securing grants, providing guidance on proposal development and submission.
-- **Institutional Policies**: Develop policies that support grant applications, such as providing access to funding databases, offering proposal review services, and recognizing grant-funded research in promotion criteria.
+   - **Critical Thinking Skills**: Train students in grant writing, emphasizing the importance of clear objectives, feasibility, and impact.
+   - **Communication Training**: Offer workshops on crafting persuasive grant proposals, including writing compelling narratives and justifying budgets.
+   - **Mentorship**: Pair students with mentors who have experience in securing grants, providing guidance on proposal development and submission.
+   - **Institutional Policies**: Develop policies that support grant applications, such as providing access to funding databases, offering proposal review services, and recognizing grant-funded research in promotion criteria.
 
 ###### Conclusion
 
@@ -105,14 +105,12 @@ How can the integration of critical thinking and global competence in English co
 ### USER
 
 **Critical Thinking:**
-
 - Analyzing and evaluating arguments and evidence.
 - Identifying assumptions and biases.
 - Synthesizing information from multiple sources.
 - Formulating well-reasoned conclusions.
 
 **Global Competence:**
-
 - Understanding and respecting cultural diversity.
 - Navigating cross-cultural communication effectively.
 - Adapting to different academic and professional environments internationally.

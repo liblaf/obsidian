@@ -1,6 +1,6 @@
 ---
-date: 2025-08-19T20:32:16+08:00
-modified: 2025-09-20T18:38:10+08:00
+created: 2025-08-19T20:32:16+08:00
+modified: 2025-08-19T21:06:17+08:00
 tags:
   - Programming/Python
 title: "A Performance Deep Dive: `dataclass` vs. `attrs` vs. `equinox`"
@@ -47,7 +47,6 @@ The results are clear: `equinox` has significant overhead. Let's dive into its s
 #### 1. Instantiation Overhead (>130x slower)
 
 When you create an instance of an `equinox.Module`, it does much more than just assign variables. Its metaclass, `_ModuleMeta`, performs several setup steps:
-
 - **PyTree Registration:** It calls `jtu.register_pytree_with_keys` to register the new class with JAX. This allows JAX transformations like `jax.jit` and `jax.grad` to understand the module's structure.
 - **Field Validation:** The `__call__` method of the metaclass (which acts as the constructor) performs extensive checks after the object is created. It verifies that all fields were initialized, checks for converters, warns about using JAX arrays in `static` fields, and runs any user-defined `__check_init__` methods.
 - **JAX Function Warnings:** It inspects arguments to warn users if they are assigning a JAX-transformed function (like one wrapped with `@jax.jit`) as a field, which is a common source of bugs.
@@ -213,9 +212,9 @@ if __name__ == "__main__":
 - **Kernel:** Linux 6.12.42-2-cachyos-lts-lto
 - **Python:** 3.12.10
 - **Packages:**
-  - `attrs`: 25.3.0
-  - `equinox`: 0.13.0
-  - `jax`: 0.7.0
+	- `attrs`: 25.3.0
+	- `equinox`: 0.13.0
+	- `jax`: 0.7.0
 
 ### Outputs
 

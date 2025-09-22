@@ -1,6 +1,6 @@
 ---
-date: 2025-07-25T15:11:22+08:00
-modified: 2025-09-20T18:38:07+08:00
+created: 2025-07-25T15:11:22+08:00
+modified: 2025-07-25T15:15:34+08:00
 tags:
   - Programming/Python
 title: Python Logging

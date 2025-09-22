@@ -1,6 +1,6 @@
 ---
-date: 2025-04-27T00:21:27+08:00
-modified: 2025-09-20T18:37:37+08:00
+created: 2025-04-27T00:21:27+08:00
+modified: 2025-04-27T00:37:51+08:00
 tags:
   - Dotfiles
   - Hardware/NVIDIA

@@ -1,7 +1,7 @@
 ---
-date: 2024-11-20T17:45:49+08:00
+created: 2024-11-20T17:45:49+08:00
 header: English for Doctoral Students (94200012-6)
-modified: 2025-09-20T18:40:27+08:00
+modified: 2024-11-20T17:51:35+08:00
 tags:
   - AIGC
   - PhD/Course/English_for_Doctoral_Students

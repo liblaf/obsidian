@@ -1,7 +1,7 @@
 ---
-date: 2024-11-23T11:45:01+08:00
+created: 2024-11-23T11:45:01+08:00
 header: English for Doctoral Students (94200012-6)
-modified: 2025-09-20T18:40:30+08:00
+modified: 2024-11-23T11:52:23+08:00
 tags:
   - AIGC
   - PhD/Course/Digital_Geometry_Processing

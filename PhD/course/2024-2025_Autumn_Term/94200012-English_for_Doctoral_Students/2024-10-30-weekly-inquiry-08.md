@@ -1,8 +1,8 @@
 ---
 categories:
   - Course Work
-date: 2024-10-30T20:34:42+08:00
-modified: 2025-09-20T18:40:20+08:00
+created: 2024-10-30T20:34:42+08:00
+modified: 2024-11-20T17:45:29+08:00
 tags:
   - AIGC
   - PhD/Course/English_for_Doctoral_Students
@@ -25,29 +25,29 @@ How can I improve my language proficiency and audience engagement in English for
 
 ### 1. **Language Proficiency**
 
-- **Practice Regularly:** Engage in daily English practice, such as reading academic articles, listening to podcasts, or watching TED Talks.
-- **Language Courses:** Enroll in English language courses specifically designed for academic purposes.
-- **Language Partners:** Find a language exchange partner or join a study group to practice speaking and receive feedback.
-- **Grammar and Vocabulary:** Use apps like Duolingo, Memrise, or Anki for targeted grammar and vocabulary practice.
+   - **Practice Regularly:** Engage in daily English practice, such as reading academic articles, listening to podcasts, or watching TED Talks.
+   - **Language Courses:** Enroll in English language courses specifically designed for academic purposes.
+   - **Language Partners:** Find a language exchange partner or join a study group to practice speaking and receive feedback.
+   - **Grammar and Vocabulary:** Use apps like Duolingo, Memrise, or Anki for targeted grammar and vocabulary practice.
 
 ### 2. **Audience Engagement**
 
-- **Clear Structure:** Organize your presentation with a clear introduction, body, and conclusion. Use signposts like "Firstly," "Secondly," and "In conclusion."
-- **Visual Aids:** Use PowerPoint slides, diagrams, and charts to support your points and keep the audience engaged.
-- **Interactive Elements:** Include questions, polls, or small group discussions to involve the audience.
-- **Body Language:** Use confident body language, maintain eye contact, and vary your tone of voice to keep the audience interested.
+   - **Clear Structure:** Organize your presentation with a clear introduction, body, and conclusion. Use signposts like "Firstly," "Secondly," and "In conclusion."
+   - **Visual Aids:** Use PowerPoint slides, diagrams, and charts to support your points and keep the audience engaged.
+   - **Interactive Elements:** Include questions, polls, or small group discussions to involve the audience.
+   - **Body Language:** Use confident body language, maintain eye contact, and vary your tone of voice to keep the audience interested.
 
 ### 3. **Resources and Tools**
 
-- **Presentation Tools:** Use software like PowerPoint, Prezi, or Canva to create visually appealing slides.
-- **Feedback Platforms:** Use platforms like SlideShare or YouTube to upload your presentations and get feedback from peers.
-- **Online Courses:** Take courses on platforms like Coursera, edX, or LinkedIn Learning that focus on public speaking and academic presentations.
-- **Books:** Read books on academic presentation skills, such as "The Craft of Scientific Presentations" by Michael Alley.
+   - **Presentation Tools:** Use software like PowerPoint, Prezi, or Canva to create visually appealing slides.
+   - **Feedback Platforms:** Use platforms like SlideShare or YouTube to upload your presentations and get feedback from peers.
+   - **Online Courses:** Take courses on platforms like Coursera, edX, or LinkedIn Learning that focus on public speaking and academic presentations.
+   - **Books:** Read books on academic presentation skills, such as "The Craft of Scientific Presentations" by Michael Alley.
 
 ### 4. **Practice and Feedback**
 
-- **Mock Presentations:** Practice your presentation in front of peers, mentors, or a mirror to get feedback on your language and delivery.
-- **Recording:** Record yourself presenting and watch the recording to identify areas for improvement.
+   - **Mock Presentations:** Practice your presentation in front of peers, mentors, or a mirror to get feedback on your language and delivery.
+   - **Recording:** Record yourself presenting and watch the recording to identify areas for improvement.
 
 ## Chat with iAsk
 
