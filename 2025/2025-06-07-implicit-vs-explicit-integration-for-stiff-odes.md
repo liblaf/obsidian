@@ -1,6 +1,6 @@
 ---
-created: 2025-06-07T22:54:00+08:00
-modified: 2025-06-08T16:19:35+08:00
+date: 2025-06-07T22:54:00+08:00
+modified: 2025-09-30T21:18:25+08:00
 tags:
   - AIGC
   - Explicit_Integration
