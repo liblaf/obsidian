@@ -1,6 +1,6 @@
 ---
 date: 2025-03-20T13:03:12+08:00
-modified: 2025-09-20T18:37:24+08:00
+modified: 2025-10-17T14:32:50+08:00
 tags:
   - Programming/Go
 title: Awesome Go
@@ -34,7 +34,8 @@ title: Awesome Go
 
 ## Logging
 
-|                   Library                   |                            Stars                            |                            Last Commit                            | Color | JSON |
-| :-----------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------------: | :---: | :--: |
-|    [zap](https://github.com/uber-go/zap)    | ![](https://img.shields.io/github/stars/uber-go/zap?label=) | ![](https://img.shields.io/github/last-commit/uber-go/zap?label=) |  🟡   |  🟢  |
-| ⭐ [zerolog](https://github.com/rs/zerolog) | ![](https://img.shields.io/github/stars/rs/zerolog?label=)  | ![](https://img.shields.io/github/last-commit/rs/zerolog?label=)  |  🟢   |  🟢  |
+|                          Library                          |                               Stars                               |                               Last Commit                               | Color |
+| :-------------------------------------------------------: | :---------------------------------------------------------------: | :---------------------------------------------------------------------: | :---: |
+|           [zap](https://github.com/uber-go/zap)           |    ![](https://img.shields.io/github/stars/uber-go/zap?label=)    |    ![](https://img.shields.io/github/last-commit/uber-go/zap?label=)    |  🟡   |
+|        ⭐ [zerolog](https://github.com/rs/zerolog)         |    ![](https://img.shields.io/github/stars/rs/zerolog?label=)     |    ![](https://img.shields.io/github/last-commit/rs/zerolog?label=)     |  🟢   |
+| [charmbracelet/log](https://github.com/charmbracelet/log) | ![](https://img.shields.io/github/stars/charmbracelet/log?label=) | ![](https://img.shields.io/github/last-commit/charmbracelet/log?label=) |  🟢   |
