@@ -1,10 +1,10 @@
 ---
 date: 2026-01-07T12:04:58+08:00
-modified: 2026-01-07T12:11:10+08:00
+modified: 2026-01-07T16:25:16+08:00
 title: "Reducing pytree Overhead in JAX: A Custom JIT Wrapper Strategy"
 ---
 
-If you have worked with JAX for long enough, you have likely run into the "static argument" problem. `jax.jit` works wonders until you pass a pytree containing a string, an integer, or any non-array data. JAX throws a `TypeError` because it tries to trace these values.
+If you have worked with [JAX](https://docs.jax.dev/) for long enough, you have likely run into the "static argument" problem. [`jax.jit`](https://docs.jax.dev/en/latest/jit-compilation.html) works wonders until you pass a pytree containing a string, an integer, or any non-array data. JAX throws a `TypeError` because it tries to trace these values.
 
 The standard community solution is Patrick Kidger's excellent library, [Equinox](https://github.com/patrick-kidger/equinox), which provides [`equinox.filter_jit`](https://docs.kidger.site/equinox/api/transformations/#equinox.filter_jit). This function automatically partitions your arguments into "traced" (arrays) and "static" (everything else) parts.
 
@@ -143,10 +143,217 @@ This is the best of both worlds:
 
 ### Why is this faster?
 
-`equinox.filter_jit` is incredibly general-purpose. To handle arbitrary filtering safely, it performs multiple passes over the pytree structure to ensure consistency and handle side effects.
+`equinox.filter_jit` is incredibly general-purpose. To handle arbitrary filtering safely, it performs multiple passes over the pytree structure to ensure consistency.
 
 My `ObjectWrapper` approach moves the filtering logic to the **edge**. We filter exactly once during the initial flatten. As far as JAX's internal C++ engine is concerned, `ObjectWrapper` is just a simple node containing a list of arrays. It doesn't need to know about the strings or integers hidden in `AuxData`.
 
 ## Conclusion
 
 If you are prototyping, stick with `equinox.filter_jit` --- it is battle-tested and easy to use. However, if you have complex custom pytrees and you observe high Python overhead during tracing or execution, implementing a "Wrap-and-Hide" strategy like `ObjectWrapper` can significantly reduce pytree traversal costs while maintaining the ability to mix static and dynamic arguments.
+
+---
+
+## Appendix: Full Runnable Code
+
+```python
+import collections
+import contextvars
+import dataclasses
+import functools
+from collections.abc import Callable, Iterable, Mapping, Sequence
+from typing import Any, Self
+
+import equinox as eqx
+import jax
+import jax.numpy as jnp
+import jax.tree_util as jtu
+
+# Type alias for clarity
+type PyTreeDef = Any
+
+# Global counter to track operations
+counter: collections.Counter[str] = collections.Counter()
+# ContextVar to toggle printing during execution
+print_call: contextvars.ContextVar[bool] = contextvars.ContextVar(
+    "print_call", default=True
+)
+
+
+def count[**P, T](func: Callable[P, T]) -> Callable[P, T]:
+    """Decorator to count and print calls to tree operations."""
+    @functools.wraps(func)
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        # Determine class name for logging
+        cls: type = args[0] if isinstance(args[0], type) else type(args[0])
+        name: str = f"{cls.__name__}.{func.__name__}"
+        
+        counter[name] += 1
+        if print_call.get():
+            print(name)
+        return func(*args, **kwargs)
+
+    return wrapper
+
+
+@jtu.register_pytree_node_class
+class ObjectWrapper[T]:
+    """
+    Wraps any object. Flattens into (dynamic_leaves, static_aux_data).
+    Non-array leaves are automatically moved to AuxData.
+    """
+    wrapped: T
+
+    @dataclasses.dataclass(eq=True, frozen=True)
+    class AuxData:
+        static_leaves: tuple[Any, ...]
+        treedef: PyTreeDef
+
+    def __init__(self, wrapped: Any) -> None:
+        self.wrapped = wrapped
+
+    @count
+    def tree_flatten(self) -> tuple[list[Any], AuxData]:
+        leaves: list[Any]
+        treedef: PyTreeDef
+        # Flatten the inner object first
+        leaves, treedef = jax.tree.flatten(self.wrapped)
+        
+        dynamic_leaves: list[Any] = []
+        static_leaves: list[Any] = []
+        
+        # Partition leaves
+        for leaf in leaves:
+            if eqx.is_array(leaf):
+                dynamic_leaves.append(leaf)
+                static_leaves.append(None)
+            else:
+                dynamic_leaves.append(None)
+                static_leaves.append(leaf)
+                
+        return dynamic_leaves, self.AuxData(tuple(static_leaves), treedef)
+
+    @classmethod
+    @count
+    def tree_unflatten(cls, aux: AuxData, children: Iterable[Any]) -> Self:
+        leaves: list[Any] = []
+        # Recombine
+        for d, s in zip(children, aux.static_leaves, strict=True):
+            leaves.append(d if d is not None else s)
+        wrapped: T = jax.tree.unflatten(aux.treedef, leaves)
+        return cls(wrapped)
+
+
+# Helper type for the arguments passed to the inner jitted function
+type ParamsWrapper = ObjectWrapper[tuple[tuple[Any, ...], dict[str, Any]]]
+
+
+def my_jit[**P, T](fun: Callable[P, T]) -> Callable[P, T]:
+    """
+    Custom JIT that wraps inputs/outputs to handle static args automatically.
+    """
+    @jax.jit
+    def inner(inputs: ParamsWrapper) -> ObjectWrapper[T]:
+        args: Sequence[Any]
+        kwargs: Mapping[str, Any]
+        args, kwargs = inputs.wrapped
+        result: T = fun(*args, **kwargs)  # pyright: ignore
+        return ObjectWrapper(result)
+
+    def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:
+        inputs: ParamsWrapper = ObjectWrapper((args, kwargs))
+        output: ObjectWrapper[T] = inner(inputs)
+        return output.wrapped
+
+    return wrapper
+
+
+@jtu.register_pytree_node_class
+class Input:
+    """A simple test PyTree."""
+    type AuxData = None
+    type Children = tuple[Any]
+
+    data: Any = None
+
+    def __init__(self, data: Any = None) -> None:
+        self.data = data
+
+    @count
+    def tree_flatten(self) -> tuple[Children, AuxData]:
+        return (self.data,), None
+
+    @classmethod
+    @count
+    def tree_unflatten(cls, _aux: AuxData, children: Children) -> Self:
+        data: Any
+        (data,) = children
+        return cls(data)
+
+
+@jtu.register_pytree_node_class
+class Output(Input): 
+    pass
+
+
+def fun(x: Input) -> Output:
+    return Output(x.data)
+
+
+# Prepare variants
+fun_jit = jax.jit(fun)
+fun_filter_jit = eqx.filter_jit(fun)
+fun_my_jit = my_jit(fun)
+
+
+def test_without_static() -> None:
+    x = Input(jnp.zeros((3,)))
+
+    print_call.set(False)
+    # Warmup to ensure we aren't counting compilation traces
+    fun_jit(x)
+    fun_filter_jit(x)
+    fun_my_jit(x)
+
+    print_call.set(True)
+    print("--- jax.jit() ---")
+    fun_jit(x)
+    
+    print("--- equinox.filter_jit() ---")
+    fun_filter_jit(x)
+    
+    print("--- my_jit() ---")
+    fun_my_jit(x)
+
+
+def test_with_static() -> None:
+    x = Input("static data")
+    print_call.set(False)
+    # Warmup
+    try:
+        fun_jit(x)
+    except TypeError:
+        # Expected failure
+        pass
+    fun_filter_jit(x)
+    fun_my_jit(x)
+
+    print_call.set(True)
+    print("--- jax.jit() with static data (skipped, would fail) ---")
+    
+    print("--- equinox.filter_jit() with static data ---")
+    fun_filter_jit(x)
+    
+    print("--- my_jit() with static data ---")
+    fun_my_jit(x)
+
+
+def main() -> None:
+    print("Running experiments...")
+    test_without_static()
+    print("\n" + "="*30 + "\n")
+    test_with_static()
+
+
+if __name__ == "__main__":
+    main()
+```
