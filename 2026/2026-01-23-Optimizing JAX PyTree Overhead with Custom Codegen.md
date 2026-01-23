@@ -1,6 +1,6 @@
 ---
 date: 2026-01-23T17:00:44+08:00
-modified: 2026-01-23T17:28:01+08:00
+modified: 2026-01-23T17:40:30+08:00
 title: Optimizing JAX PyTree Overhead with Custom Codegen
 ---
 
@@ -14,14 +14,20 @@ I benchmarked five different ways to define PyTrees in JAX to see how much overh
 
 Here is the breakdown of the time it takes to `flatten` (convert object to arrays) and `unflatten` (reconstruct object from arrays) a simple class with 7 data fields and 3 static fields.
 
-|                   Method                   |   Flatten    |  Unflatten   | Notes                               |
-| :----------------------------------------: | :----------: | :----------: | ----------------------------------- |
-|          **my codegen + `attrs`**          | **~0.29 µs** | **~0.18 µs** | **🚀 Fastest.**                     |
-|     `jtu.register_dataclass` + `attrs`     |   ~0.64 µs   |   ~1.04 µs   | Fast C++ flatten.                   |
-|   `jtu.register_dataclass` + `dataclass`   |   ~0.64 µs   |   ~1.16 µs   | Fast C++ flatten.                   |
-|       manual registeration + `attrs`       |   ~1.60 µs   |   ~2.01 µs   | Standard Python iteration overhead. |
-|              `equinox.Module`              |   ~2.16 µs   |   ~1.87 µs   | Safe codegen with dynamic overhead. |
-| `jtu.register_dataclass` + slow `__init__` |   ~0.67 µs   | **~1000 µs** | ⚠️ The trap of native JAX support.  |
+|                   Method                   |   Flatten    |  Unflatten   | Notes                                     |
+| :----------------------------------------: | :----------: | :----------: | ----------------------------------------- |
+|     `jtu.register_dataclass` + `attrs`     |   ~0.64 µs   |   ~1.04 µs   | ⚡ fastest (C++), but calls `__init__`     |
+|   `jtu.register_dataclass` + `dataclass`   |   ~0.64 µs   |   ~1.16 µs   | ⚡ fastest (C++), but calls `__init__`     |
+|          **my codegen + `attrs`**          | **~0.74 µs** | **~1.01 µs** | 🔥 fast, pure Python, bypasses `__init__` |
+|       manual registeration + `attrs`       |   ~1.60 µs   |   ~2.01 µs   | standard Python iteration overhead        |
+|              `equinox.Module`              |   ~2.16 µs   |   ~1.87 µs   | safe codegen with dynamic overhead        |
+| `jtu.register_dataclass` + slow `__init__` |   ~0.67 µs   | **~1000 µs** | ⚠️ trap of native JAX support             |
+
+### Key Takeaways
+
+1. **JAX Dataclasses are fast but dangerous:** JAX's C++ implementation is incredibly fast. However, it **does not** bypass `__init__`. If your class performs heavy validation or conversion in `__init__` (or `__post_init__`), unflatten performance collapses.
+2. **Custom Codegen is the sweet spot:** By generating specific Python code at runtime and compiling it, we achieve performance nearly identical to C++, but with the safety of bypassing `__init__`.
+3. **Equinox is convenient but slightly slower:** While Equinox also uses codegen internally, equinox.Module instances are generally dictionary-based. This adds a slight overhead compared to `__slots__` based classes used in the other methods.
 
 ### The "Slow Init" Trap
 
