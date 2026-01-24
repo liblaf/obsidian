@@ -1,6 +1,6 @@
 ---
 date: 2026-01-23T17:00:44+08:00
-modified: 2026-01-23T17:40:30+08:00
+modified: 2026-01-23T20:37:14+08:00
 title: Optimizing JAX PyTree Overhead with Custom Codegen
 ---
 
@@ -333,6 +333,7 @@ def _update_linecache(source: str, filename: str) -> None:
         filename,  # fullname
     )
 
+register_fieldz(A)
 
 def main() -> None:
     obj = A()
